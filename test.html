@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>按钮和单选框和多选框</title>
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./node_modules/labelauty/source/jquery-labelauty.js"></script>
+    <link rel="stylesheet" type="text/css" href="./node_modules/labelauty/source/jquery-labelauty.css">
+    <style type="text/css">
+        h1.intro {color:blue;}
+        p.important {color:green;}
+    </style>
+</head>
+
+<body>
+    <p>名字：<input type="text" name="username" value="咕咕咕咕咕" maxlength="8" size="30"></p>
+    <fieldset id="μ's" style="border-width: 0px">
+        <legend>μ's</legend>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Emi" type="checkbox" data-labelauty="Nitta Emi|Nitta Emi"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Yoshino" type="checkbox" data-labelauty="Nanjō Yoshino|Nanjō Yoshino"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Aya" type="checkbox" data-labelauty="Uchida Aya|Uchida Aya"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Suzuko" type="checkbox" data-labelauty="Mimori Suzuko|Mimori Suzuko"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Riho" type="checkbox" data-labelauty="Iida Riho|Iida Riho"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Eriko" type="checkbox" data-labelauty="Hori Eriko|Hori Eriko"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Aina" type="checkbox" data-labelauty="Kusuda Aina|Kusuda Aina"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Yurika" type="checkbox" data-labelauty="Kubo Yurika|Kubo Yurika"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Sora" type="checkbox" data-labelauty="Tokui Sora|Tokui Sora"/></div>
+    </fieldset>
+    <fieldset id="Aqours" style="border-width: 0px">
+        <legend>Aqours</legend>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Anju" type="checkbox" data-labelauty="Inami Anju|Inami Anju"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Rikako" type="checkbox" data-labelauty="Aida Rikako|Aida Rikako"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Nanaka" type="checkbox" data-labelauty="Suwa Nanaka|Suwa Nanaka"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Arisa" type="checkbox" data-labelauty="Komiya Arisa|Komiya Arisa"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Shuka" type="checkbox" data-labelauty="Saitō Shuka|Saitō Shuka"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Aika" type="checkbox" data-labelauty="Kobayashi Aika|Kobayashi Aika"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Kanako" type="checkbox" data-labelauty="Takatsuki Kanako|Takatsuki Kanako"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Aina" type="checkbox" data-labelauty="Suzuki Aina|Suzuki Aina"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Ai" type="checkbox" data-labelauty="Furihata Ai|Furihata Ai"/></div>
+    </fieldset>
+    <fieldset id="ニジガク" style="border-width: 0px;">
+        <legend>虹ヶ咲学園スクールアイドル同好会</legend>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Aguri" type="checkbox" data-labelauty="Ōnishi Aguri|Ōnishi Aguri"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Mayu" type="checkbox" data-labelauty="Sagara Mayu|Sagara Mayu"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Kaori" type="checkbox" data-labelauty="Maeda Kaori|Maeda Kaori"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Miyu" type="checkbox" data-labelauty="Kubota Miyu|Kubota Miyu"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Natsumi" type="checkbox" data-labelauty="Murakami Natsumi|Murakami Natsumi"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Akari" type="checkbox" data-labelauty="Kito Akari|Kito Akari"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Tomori" type="checkbox" data-labelauty="Kusunoki Tomori|Kusunoki Tomori"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Maria" type="checkbox" data-labelauty="Sashide Maria|Sashide Maria"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Chiemi" type="checkbox" data-labelauty="Tanaka Chiemi|Tanaka Chiemi"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Moeka" type="checkbox" data-labelauty="Koizumi Moeka|Koizumi Moeka"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Shū" type="checkbox" data-labelauty="Uchida Shū|Uchida Shū"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Akina" type="checkbox" data-labelauty="Houmoto Akina|Houmoto Akina"/></div>
+    </fieldset>
+    <fieldset id="Liella" style="border-width: 0px">
+        <legend>Aqours</legend>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Sayuri" type="checkbox" data-labelauty="Date Sayuri|Date Sayuri"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Liyuu" type="checkbox" data-labelauty="Liyuu|Liyuu"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Nako" type="checkbox" data-labelauty="Misaki Nako|Misaki Nako"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Naomi" type="checkbox" data-labelauty="Payton Naomi|Payton Naomi"/></div>
+        <div style="float:left;padding:10px 5px 0px;"><input class="Nagisa" type="checkbox" data-labelauty="Aoyama Nagisa|Aoyama Nagisa"/></div>
+    </fieldset>
+    <script>
+        $(document).ready(function () {
+            $(":checkbox").labelauty();
+            $(":radio").labelauty();
+        });
+    </script>
+    <style id="μ's">
+        input.labelauty:checked + label{
+            background-color: #3498db;
+            color: #ffffff;
+        }.Emi.labelauty:checked + label{
+            background-color: #FFAE00;
+            color: #FFFFFF;
+        }.Emi.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #FFC240;
+        }.Yoshino.labelauty:checked + label{
+            background-color: #00BBFF;
+            color: #FFFFFF;
+        }.Yoshino.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #40CCFF;
+        }.Aya.labelauty:checked + label{
+            background-color: #A8A8A8;
+            color: #FFFFFF;
+        }.Aya.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #A7A7A7;
+        }.Riho.labelauty:checked + label{
+            background-color: #6D56FF;
+            color: #FFFFFF;
+        }.Riho.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #9280FF;
+        }.Eriko.labelauty:checked + label{
+            background-color: #FEE155;
+            color: #FFFFFF;
+        }.Eriko.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #FEE87F;
+        }.Aina.labelauty:checked + label{
+            background-color: #FF6239;
+            color: #FFFFFF;
+        }.Aina.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #FF896B;
+        }.Yurika.labelauty:checked + label{
+            background-color: #E44FFF;
+            color: #FFFFFF;
+        }.Yurika.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #EB7BFF;
+        }.Aina.labelauty:checked + label{
+            background-color: #44CD71;
+            color: #FFFFFF;
+        }.Aina.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #66CD88;
+        }.Sora.labelauty:checked + label{
+            background-color: #FF62DD;
+            color: #FFFFFF;
+        }.Sora.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #FF89E6;
+        }
+    </style>
+    <style id="Aqours">
+        input.labelauty:checked + label{
+            background-color: #3498db;
+	        color: #ffffff;
+        }.Anju.labelauty:checked + label{
+            background-color: #FF9933;
+            color: #FFFFFF;
+        }.Anju.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #FFB366;
+        }.Rikako.labelauty:checked + label{
+            background-color: #FF7777;
+            color: #FFFFFF;
+        }.Rikako.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #FF9999;
+        }.Nanaka.labelauty:checked + label{
+            background-color: #00D29E;
+            color: #FFFFFF;
+        }.Nanaka.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #35D2AB;
+        }.Arisa.labelauty:checked + label{
+            background-color: #F43232;
+            color: #FFFFFF;
+        }.Arisa.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #F46363;
+        }.Shuka.labelauty:checked + label{
+            background-color: #2AA4DB;
+            color: #FFFFFF;
+        }.Shuka.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #56B2DB;
+        }.Aika.labelauty:checked + label{
+            background-color: #AEAEAE;
+            color: #FFFFFF;
+        }.Aika.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #ADADAD;
+        }.Kanako.labelauty:checked + label{
+            background-color: #CFBA0F;
+            color: #FFFFFF;
+        }.Kanako.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #CFBF3F;
+        }.Aina.labelauty:checked + label{
+            background-color: #A530E0;
+            color: #FFFFFF;
+        }.Aina.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #B45CE0;
+        }.Ai.labelauty:checked + label{
+            background-color: #EE55B7;
+            color: #FFFFFF;
+        }.Ai.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #EE7BC5;
+        }
+    </style>
+    <style id="ニジガク">
+        input.labelauty:checked + label{
+            background-color: #3498db;
+            color: #ffffff;
+        }.Aguri.labelauty:checked + label{
+            background-color: #ED7D95;
+            color: #FFFFFF;
+        }.Aguri.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #ED99AB;
+        }.Mayu.labelauty:checked + label{
+            background-color: #E7D600;
+            color: #FFFFFF;
+        }.Mayu.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #E7DA3A;
+        }.Kaori.labelauty:checked + label{
+            background-color: #01B7ED;
+            color: #FFFFFF;
+        }.Kaori.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #3CC5ED;
+        }.Miyu.labelauty:checked + label{
+            background-color: #485EC6;
+            color: #FFFFFF;
+        }.Miyu.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #6878C6;
+        }.Natsumi.labelauty:checked + label{
+            background-color: #FF5800;
+            color: #FFFFFF;
+        }.Natsumi.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #FF8240;
+        }.Akari.labelauty:checked + label{
+            background-color: #A664A0;
+            color: #FFFFFF;
+        }.Akari.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #A675A2;
+        }.Tomori.labelauty:checked + label{
+            background-color: #D81C2F;
+            color: #FFFFFF;
+        }.Tomori.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #D84B59;
+        }.Maria.labelauty:checked + label{
+            background-color: #84C36E;
+            color: #FFFFFF;
+        }.Maria.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #94C383;
+        }.Chiemi.labelauty:checked + label{
+            background-color: #9CA5B9;
+            color: #FFFFFF;
+        }.Chiemi.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #A3AAB9;
+        }.Moeka.labelauty:checked + label{
+            background-color: #37B484;
+            color: #FFFFFF;
+        }.Moeka.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #56B490;
+        }.Shū.labelauty:checked + label{
+            background-color: #A9A898;
+            color: #FFFFFF;
+        }.Shū.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #A9A89C;
+        }.Akina.labelauty:checked + label{
+            background-color: #F69992;
+            color: #FFFFFF;
+        }.Akina.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #F6B0AB;
+        }
+    </style>
+    <style id="Aqours">
+        input.labelauty:checked + label{
+            background-color: #3498db;
+            color: #ffffff;
+        }.Sayuri.labelauty:checked + label{
+            background-color: #FF7F27;
+            color: #FFFFFF;
+        }.Sayuri.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #FF9F5D;
+        }.Liyuu.labelauty:checked + label{
+            background-color: #A0FFF9;
+            color: #FFFFFF;
+        }.Liyuu.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #B8FFFB;
+        }.Nako.labelauty:checked + label{
+            background-color: #FF6E90;
+            color: #FFFFFF;
+        }.Nako.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #FF92AC;
+        }.Naomi.labelauty:checked + label{
+            background-color: #74F466;
+            color: #FFFFFF;
+        }.Naomi.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #94F48A;
+        }.Nagisa.labelauty:checked + label{
+            background-color: #0000A0;
+            color: #FFFFFF;
+        }.Nagisa.labelauty:checked:not([disabled]) + label:hover{
+            background-color: #2828A0;
+        }
+    </style>
+</body>
+
+</html>

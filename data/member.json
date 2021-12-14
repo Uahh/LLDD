@@ -1,0 +1,30 @@
+{
+    "member": [
+        {
+            "name": "三森铃子",
+            "japanese_name": "三森すずこ",
+            "roman": "Mimori Suzuko",
+            "birth_year": "1986",
+            "group": [
+                "lily white",
+                "μ's"
+            ],
+            "picture": [
+                "../picture/MisakiNako__cut/"
+            ]
+        },
+        {
+            "name": "伊波杏树",
+            "japanese_name": "伊波杏樹",
+            "roman": "Inami Anju",
+            "birth_year": "1996",
+            "group": [
+                "Cyaron!",
+                "Aqours"
+            ],
+            "picture": [
+                "../picture/anju_inami_cut/"
+            ]
+        }
+    ]
+}

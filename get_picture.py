@@ -18,9 +18,13 @@ idol_list = [
     "SayuriDate", "Liyu0109", "MisakiNako_", "_Naomi_Payton_", "AoyamaNagisa"
 ]
 
+idol_list = [
+    "nanjolno"
+]
+
 for idol in idol_list:
     jpgurl_list = []
-    for page in range(1, 100):
+    for page in range(1, 170):
         r = requests.get("https://twi.lovelive.cx/?id=" + idol +"&type=original&page=" + str(page))
         pattern = re.compile('https://proxy.lovelive.cx/media.+?.jpg')
         jpgurl = pattern.findall(repr(r.text))

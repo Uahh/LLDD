@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>验证</title>
+    <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.0-beta.7/vue.global.prod.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue-router/4.0.10/vue-router.global.prod.min.js"></script>
+    <link rel="stylesheet" href="../static/css/bbk.css">
+</head>
+
+<body>
+    <div id="app" data-v-app="">
+        <div>
+            <div class="captcha-box">
+                <div class="head-box">
+                    <p>选择所有是</p>
+                    <h2>{{ idol }}</h2>
+                    <p>的照片，点按后请点击“验证”。</p><img src={{ p1 }} class="cover">
+                </div>
+                <div class="images-box">
+                    <div class="image-item" id="p1" data-selected="false">
+                        <img style="opacity:0;" src={{ p1 }}></img>
+                    </div>
+                    <div class="image-item" id="p2" data-selected="false" style="background: rgba(156, 10, 10, 0.83);background-image: url(https://lab.magiconch.com/captcha/assets/wrong.32c59a87.svg);">
+                        <img style="opacity:0;" src={{ p1 }}></img>
+                    </div>
+                    <div class="image-item" id="p3" data-selected="false">
+                        <img style="opacity:0;" src={{ p1 }}></img>
+                    </div>
+                    <div class="image-item" id="p4" data-selected="false">
+                        <img style="opacity:0;" src={{ p1 }}></img>
+                    </div>
+                    <div class="image-item" id="p5" data-selected="false">
+                        <img style="opacity:0;" src={{ p1 }}></img>
+                    </div>
+                    <div class="image-item" id="p6" data-selected="false">
+                        <img style="opacity:0;" src={{ p1 }}></img>
+                    </div>
+                    <div class="image-item" id="p7" data-selected="false">
+                        <img style="opacity:0;" src={{ p1 }}></img>
+                    </div>
+                    <div class="image-item" id="p8" data-selected="false">
+                        <img style="opacity:0;" src={{ p1 }}></img>
+                    </div>
+                    <div class="image-item" id="p9" data-selected="false">
+                        <img style="opacity:0;" src={{ p1 }}></img>
+                    </div>
+                    <script>
+                        function func(id, element_str) {
+                            if ($('#' + id).attr(element_str) == 'false')
+                                $('#' + id).attr(element_str, 'true');
+                            else
+                                $('#' + id).attr(element_str, 'false');
+                        }
+                        $("#p1").click(function () {
+                            func('p1', 'data-selected')
+                        });
+                        $("#p2").click(function () {
+                            func('p2', 'data-selected')
+                        });
+                        $("#p3").click(function () {
+                            func('p3', 'data-selected')
+                        });
+                        $("#p4").click(function () {
+                            func('p4', 'data-selected')
+                        });
+                        $("#p5").click(function () {
+                            func('p5', 'data-selected')
+                        });
+                        $("#p6").click(function () {
+                            func('p6', 'data-selected')
+                        });
+                        $("#p7").click(function () {
+                            func('p7', 'data-selected')
+                        });
+                        $("#p8").click(function () {
+                            func('p8', 'data-selected')
+                        });
+                        $("#p9").click(function () {
+                            func('p9', 'data-selected')
+                        });
+                    </script>
+                </div>
+                <div class="ctrl-box">
+                    <div class="left-box">
+                        <button class="reset icon reseting"><svg viewBox="0 0 24 24">
+                                <path d="M21,3v7h-7l2.9-2.9C15.7,5.8,13.9,5,12,5c-3.9,0-7,3.1-7,7s3.1,7,7,7c3.2,0,5.9-2.2,6.8-5.2l2,0.4
+                            c-1,3.9-4.5,6.7-8.7,6.7c-5,0-9-4-9-9s4-9,9-9c2.5,0,4.7,1,6.4,2.6L21,3z"></path>
+                            </svg></button>
+                        <button class="tip icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8 S16.4,20,12,20z M11,7h2v2h-2V7z M11,10h2v7h-2V10z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="blue" onclick="verify()">验证</button>
+                </div>
+                <script>
+                    function verify() {
+                        var pic_list = []
+                        for (var i = 1; i < 10; i++) {
+                            if ($('#p' + i).attr('data-selected') == 'true')
+                                pic_list.push(i)
+                        }
+                        console.log(pic_list)
+                    }
+                </script>
+                <!---->
+                <div class="alert-box success" style="display: none;">
+                    <i class="icon"></i>
+                    <p>恭喜猜对了，一定是爬了很多次大吉山的美少女</p>
+                </div>
+                <div class="alert-box wrong"style="display: none;">
+                    <i class="icon"></i>
+                    <p>再多爬几次试试？</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

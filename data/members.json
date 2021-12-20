@@ -1,0 +1,182 @@
+{
+    "Inami_Anju": {
+        "name": "伊波杏树",
+        "japanese_name": "伊波 杏樹",
+        "roman": "Inami Anju",
+        "group": [
+            "Cyaron!",
+            "Aqours"
+        ],
+        "picture": "picture/Inami_Anju"
+    },
+    "Aida_Rikako": {
+        "name": "逢田梨香子",
+        "japanese_name": "逢田 梨香子",
+        "roman": "Aida Rikako",
+        "group": [
+            "Guilty Kiss",
+            "Aqours"
+        ],
+        "picture": "picture/Aida_Rikako"
+    },
+    "Suwa_Nanaka": {
+        "name": "诹访奈奈香",
+        "japanese_name": "諏訪 ななか",
+        "roman": "Suwa Nanaka",
+        "group": [
+            "AZALEA",
+            "Aqours"
+        ],
+        "picture": "picture/Suwa_Nanaka"
+    },
+    "Komiya_Arisa": {
+        "name": "小宫有纱",
+        "japanese_name": "小宮 有紗",
+        "roman": "Komiya Arisa",
+        "group": [
+            "AZALEA",
+            "Aqours"
+        ],
+        "picture": "picture/Komiya_Arisa"
+    },
+    "Saito_Shuka": {
+        "name": "齐藤朱夏",
+        "japanese_name": "斉藤 朱夏",
+        "roman": "Saitō Shuka",
+        "group": [
+            "Cyaron!",
+            "Aqours"
+        ],
+        "picture": "picture/Saito_Shuka"
+    },
+    "Kobayashi_Aika": {
+        "name": "小林爱香",
+        "japanese_name": "小林 愛香",
+        "roman": "Kobayashi Aika",
+        "group": [
+            "Guilty Kiss",
+            "Aqours"
+        ],
+        "picture": "picture/Kobayashi_Aika"
+    },
+    "Takatsuki_Kanako": {
+        "name": "高槻加奈子",
+        "japanese_name": "高槻 かなこ",
+        "roman": "Takatsuki Kanako",
+        "group": [
+            "AZALEA",
+            "Aqours"
+        ],
+        "picture": "picture/Takatsuki_Kanako"
+    },
+    "Suzuki_Aina": {
+        "name": "铃木爱奈",
+        "japanese_name": "鈴木 愛奈",
+        "roman": "Suzuki Aina",
+        "group": [
+            "Guilty Kiss",
+            "Aqours"
+        ],
+        "picture": "picture/Suzuki_Aina"
+    },
+    "Furihata_Ai": {
+        "name": "降幡爱",
+        "japanese_name": "降幡 愛",
+        "roman": "Furihata Ai",
+        "group": [
+            "Cyaron!",
+            "Aqours"
+        ],
+        "picture": "picture/Furihata_Ai"
+    },
+    "Mimori_Suzuko": {
+        "name": "三森铃子",
+        "japanese_name": "三森すずこ",
+        "roman": "Mimori Suzuko",
+        "group": [
+            "lily white",
+            "μ's"
+        ],
+        "picture": "picture/Mimori_Suzuko"
+    },
+    "Nitta_Emi": {
+        "name": "新田惠海",
+        "japanese_name": "新田 恵海",
+        "roman": "Nitta Emi",
+        "group": [
+            "",
+            "μ's"
+        ],
+        "picture": "picture/Nitta_Emi"
+    },
+    "Nanjo_Yoshino": {
+        "name": "南条爱乃",
+        "japanese_name": "南條 愛乃",
+        "roman": "Nanjō Yoshino",
+        "group": [
+            "",
+            "μ's"
+        ],
+        "picture": "picture/Nanjo_Yoshino"
+    },
+    "Iida_Riho": {
+        "name": "饭田里穗",
+        "japanese_name": "飯田 里穂",
+        "roman": "Iida Riho",
+        "group": [
+            "",
+            "μ's"
+        ],
+        "picture": "picture/Iida_Riho"
+    },
+    "Pile": {
+        "name": "Pile",
+        "japanese_name": "Pile",
+        "roman": "Hori Eriko",
+        "group": [
+            "",
+            "μ's"
+        ],
+        "picture": "picture/Pile"
+    },
+    "Kusuda_Aina": {
+        "name": "楠田亚衣奈",
+        "japanese_name": "楠田 亜衣奈",
+        "roman": "Kusuda Aina",
+        "group": [
+            "",
+            "μ's"
+        ],
+        "picture": "picture/Kusuda_Aina"
+    },
+    "Kubo_Yurika": {
+        "name": "久保由利香",
+        "japanese_name": "久保 ユリカ",
+        "roman": "Kubo Yurika",
+        "group": [
+            "",
+            "μ's"
+        ],
+        "picture": "picture/Kubo_Yurika"
+    },
+    "Tokui_Sora": {
+        "name": "德井青空",
+        "japanese_name": "徳井 青空",
+        "roman": "Tokui Sora",
+        "group": [
+            "",
+            "μ's"
+        ],
+        "picture": "picture/Tokui_Sora"
+    },
+    "Uchida_Aya": {
+        "name": "内田彩",
+        "japanese_name": "内田 彩",
+        "roman": "Uchida Aya",
+        "group": [
+            "",
+            "μ's"
+        ],
+        "picture": "picture/Uchida_Aya"
+    }
+}

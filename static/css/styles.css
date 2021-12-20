@@ -1,34 +1,352 @@
-/* ============================== */
-/* ! Layout for desktop version   */
-/* ============================== */
+/* μ's */
+.Nitta_Emi.labelauty:checked+label {
+	background-color: #FFAE00;
+	color: #FFFFFF;
+}
 
-	body {
-		
-	}
-	
+.Nitta_Emi.labelauty:checked:not([disabled])+label:hover {
+	background-color: #FFC240;
+}
 
-/* ============================= */
-/* ! Layout for mobile version   */
-/* ============================= */
+.Nanjo_Yoshino.labelauty:checked+label {
+	background-color: #00BBFF;
+	color: #FFFFFF;
+}
 
-@media handheld, only screen and (max-width: 767px) {
+.Nanjo_Yoshino.labelauty:checked:not([disabled])+label:hover {
+	background-color: #40CCFF;
+}
 
-	body {
-		
-	}
+.Uchida_Aya.labelauty:checked+label {
+	background-color: #A8A8A8;
+	color: #FFFFFF;
+}
 
+.Uchida_Aya.labelauty:checked:not([disabled])+label:hover {
+	background-color: #A7A7A7;
+}
+
+.Mimori_Suzuko.labelauty:checked+label {
+	background-color: #6D56FF;
+	color: #FFFFFF;
+}
+
+.Mimori_Suzuko.labelauty:checked:not([disabled])+label:hover {
+	background-color: #9280FF;
+}
+
+.Iida_Riho.labelauty:checked+label {
+	background-color: #FEE155;
+	color: #FFFFFF;
+}
+
+.Iida_Riho.labelauty:checked:not([disabled])+label:hover {
+	background-color: #FEE87F;
+}
+
+.Pile.labelauty:checked+label {
+	background-color: #FF6239;
+	color: #FFFFFF;
+}
+
+.Pile.labelauty:checked:not([disabled])+label:hover {
+	background-color: #FF896B;
+}
+
+.Kusuda_Aina.labelauty:checked+label {
+	background-color: #E44FFF;
+	color: #FFFFFF;
+}
+
+.Kusuda_Aina.labelauty:checked:not([disabled])+label:hover {
+	background-color: #FF89E6;
+}
+
+.Kubo_Yurika.labelauty:checked+label {
+	background-color: #44CD71;
+	color: #FFFFFF;
+}
+
+.Kubo_Yurika.labelauty:checked:not([disabled])+label:hover {
+	background-color: #66CD88;
+}
+
+.Tokui_Sora.labelauty:checked+label {
+	background-color: #FF62DD;
+	color: #FFFFFF;
+}
+
+.Tokui_Sora.labelauty:checked:not([disabled])+label:hover {
+	background-color: #FF89E6;
+}
+
+/* Aqours */
+.Inami_Anju.labelauty:checked+label {
+	background-color: #FF9933;
+	color: #FFFFFF;
+}
+
+.Inami_Anju.labelauty:checked:not([disabled])+label:hover {
+	background-color: #FFB366;
+}
+
+.Aida_Rikako.labelauty:checked+label {
+	background-color: #FF7777;
+	color: #FFFFFF;
+}
+
+.Aida_Rikako.labelauty:checked:not([disabled])+label:hover {
+	background-color: #FF9999;
+}
+
+.Suwa_Nanaka.labelauty:checked+label {
+	background-color: #00D29E;
+	color: #FFFFFF;
+}
+
+.Suwa_Nanaka.labelauty:checked:not([disabled])+label:hover {
+	background-color: #35D2AB;
+}
+
+.Komiya_Arisa.labelauty:checked+label {
+	background-color: #F43232;
+	color: #FFFFFF;
+}
+
+.Komiya_Arisa.labelauty:checked:not([disabled])+label:hover {
+	background-color: #F46363;
+}
+
+.Saito_Shuka.labelauty:checked+label {
+	background-color: #2AA4DB;
+	color: #FFFFFF;
+}
+
+.Saito_Shuka.labelauty:checked:not([disabled])+label:hover {
+	background-color: #56B2DB;
+}
+
+.Kobayashi_Aika.labelauty:checked+label {
+	background-color: #AEAEAE;
+	color: #FFFFFF;
+}
+
+.Kobayashi_Aika.labelauty:checked:not([disabled])+label:hover {
+	background-color: #ADADAD;
+}
+
+.Takatsuki_Kanako.labelauty:checked+label {
+	background-color: #CFBA0F;
+	color: #FFFFFF;
+}
+
+.Takatsuki_Kanako.labelauty:checked:not([disabled])+label:hover {
+	background-color: #CFBF3F;
+}
+
+.Suzuki_Aina.labelauty:checked+label {
+	background-color: #A530E0;
+	color: #FFFFFF;
+}
+
+.Suzuki_Aina.labelauty:checked:not([disabled])+label:hover {
+	background-color: #B45CE0;
+}
+
+.Furihata_Ai.labelauty:checked+label {
+	background-color: #EE55B7;
+	color: #FFFFFF;
+}
+
+.Furihata_Ai.labelauty:checked:not([disabled])+label:hover {
+	background-color: #EE7BC5;
+}
+
+/* Saint Snow */
+.Tano_Asami.labelauty:checked+label {
+	background-color: #00CCFF;
+	color: #FFFFFF;
+}
+
+.Tano_Asami.labelauty:checked:not([disabled])+label:hover {
+	background-color: #00CCFF;
+}
+
+.Sato_Hinata.labelauty:checked+label {
+	background-color: #BBBBBB;
+	color: #FFFFFF;
+}
+
+.Sato_Hinata.labelauty:checked:not([disabled])+label:hover {
+	background-color: #BBBBBB;
 }
 
 
-/* ========================================== */
-/* ! Provide higher res assets for iPhone 4   */
-/* ========================================== */
+/* 虹ヶ咲学園スクールアイドル */
+.Onishi_Aguri.labelauty:checked+label {
+	background-color: #ED7D95;
+	color: #FFFFFF;
+}
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+.Onishi_Aguri.labelauty:checked:not([disabled])+label:hover {
+	background-color: #ED99AB;
+}
 
-/*	.logo {
-		background: url(logo2x.jpg) no-repeat;
-		background-size: 212px 303px;
-	}*/
+.Sagara_Mayu.labelauty:checked+label {
+	background-color: #E7D600;
+	color: #FFFFFF;
+}
 
+.Sagara_Mayu.labelauty:checked:not([disabled])+label:hover {
+	background-color: #E7DA3A;
+}
+
+.Maeda_Kaori.labelauty:checked+label {
+	background-color: #01B7ED;
+	color: #FFFFFF;
+}
+
+.Maeda_Kaori.labelauty:checked:not([disabled])+label:hover {
+	background-color: #3CC5ED;
+}
+
+.Kubota_Miyu.labelauty:checked+label {
+	background-color: #485EC6;
+	color: #FFFFFF;
+}
+
+.Kubota_Miyu.labelauty:checked:not([disabled])+label:hover {
+	background-color: #6878C6;
+}
+
+.Murakami_Natsumi.labelauty:checked+label {
+	background-color: #FF5800;
+	color: #FFFFFF;
+}
+
+.Murakami_Natsumi.labelauty:checked:not([disabled])+label:hover {
+	background-color: #FF8240;
+}
+
+.Kito_Akari.labelauty:checked+label {
+	background-color: #A664A0;
+	color: #FFFFFF;
+}
+
+.Kito_Akari.labelauty:checked:not([disabled])+label:hover {
+	background-color: #A675A2;
+}
+
+.Kusunoki_Tomori.labelauty:checked+label {
+	background-color: #D81C2F;
+	color: #FFFFFF;
+}
+
+.Kusunoki_Tomori.labelauty:checked:not([disabled])+label:hover {
+	background-color: #D84B59;
+}
+
+.Sashide_Maria.labelauty:checked+label {
+	background-color: #84C36E;
+	color: #FFFFFF;
+}
+
+.Sashide_Maria.labelauty:checked:not([disabled])+label:hover {
+	background-color: #94C383;
+}
+
+.Tanaka_Chiemi.labelauty:checked+label {
+	background-color: #9CA5B9;
+	color: #FFFFFF;
+}
+
+.Tanaka_Chiemi.labelauty:checked:not([disabled])+label:hover {
+	background-color: #A3AAB9;
+}
+
+.Koizumi_Moeka.labelauty:checked+label {
+	background-color: #37B484;
+	color: #FFFFFF;
+}
+
+.Koizumi_Moeka.labelauty:checked:not([disabled])+label:hover {
+	background-color: #56B490;
+}
+
+.Uchida_Shu.labelauty:checked+label {
+	background-color: #A9A898;
+	color: #FFFFFF;
+}
+
+.Uchida_Shu.labelauty:checked:not([disabled])+label:hover {
+	background-color: #A9A89C;
+}
+
+.Houmoto_Akina.labelauty:checked+label {
+	background-color: #F69992;
+	color: #FFFFFF;
+}
+
+.Houmoto_Akina.labelauty:checked:not([disabled])+label:hover {
+	background-color: #F6B0AB;
+}
+
+.Yano_Hinaki.labelauty:checked+label {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.Yano_Hinaki.labelauty:checked:not([disabled])+label:hover {
+	background-color: #000000;
+}
+
+input.labelauty:checked+label {
+	background-color: #3498db;
+	color: #ffffff;
+}
+
+/* Liella! */
+.Date_Sayuri.labelauty:checked+label {
+	background-color: #FF7F27;
+	color: #FFFFFF;
+}
+
+.Date_Sayuri.labelauty:checked:not([disabled])+label:hover {
+	background-color: #FF9F5D;
+}
+
+.Liyuu.labelauty:checked+label {
+	background-color: #A0FFF9;
+	color: #FFFFFF;
+}
+
+.Liyuu.labelauty:checked:not([disabled])+label:hover {
+	background-color: #B8FFFB;
+}
+
+.Misaki_Nako.labelauty:checked+label {
+	background-color: #FF6E90;
+	color: #FFFFFF;
+}
+
+.Misaki_Nako.labelauty:checked:not([disabled])+label:hover {
+	background-color: #FF92AC;
+}
+
+.Payton_Naomi.labelauty:checked+label {
+	background-color: #74F466;
+	color: #FFFFFF;
+}
+
+.Payton_Naomi.labelauty:checked:not([disabled])+label:hover {
+	background-color: #94F48A;
+}
+
+.Aoyama_Nagisa.labelauty:checked+label {
+	background-color: #0000A0;
+	color: #FFFFFF;
+}
+
+.Aoyama_Nagisa.labelauty:checked:not([disabled])+label:hover {
+	background-color: #2828A0;
 }

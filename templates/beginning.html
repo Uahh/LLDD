@@ -249,8 +249,10 @@
             var json_data = {};
             json_data.user_id = user_id;
             json_data.select_idols = [];
+            json_data.back_up = [];
             for (var i = 0; i < select_data.length; i++) {
                 json_data.select_idols.push(select_data[i]);
+                json_data.back_up.push(select_data[i]);
             }
             console.log(JSON.stringify(json_data))
             $.post('http://192.168.31.11:173/mid', JSON.stringify(json_data), function (data, status) {

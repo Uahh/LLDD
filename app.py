@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import json
+import copy
 import random
 from re import A
 # from models import functions
@@ -45,12 +46,29 @@ def get_idol_pic(idol, num):
         del file_names_list[random_file]
     return res
 
+def create_value(value, name):
+    ans = "{ value: V, name: \"N\" },"
+    return ans.replace('V', str(value)).replace('N', name)
+
 # 主要逻辑视图函数
 
 @app.route('/', methods=["GET", "POST"])
 @app.route('/index', methods=["GET", "POST"])
 def index():
     return render_template('beginning.html')
+    # a = "{ value: 679, name: \"μ\'s\", selected: true }"
+    # b = "{ value: 679, name: \"Aqours\" }"
+    # c = "\"#000000\""
+    # d = ""
+    # e = "{ value: 1048, name: \"Nitta Emi\" }"
+    # return render_template(
+    #     'ending.html', 
+    #     Ms=a,
+    #     Aq=b,
+    #     MsC=c,
+    #     AqC=d,
+    #     Nitta_Emi=e
+    # )
 
 
 @app.route('/mid', methods=["GET", "POST"])
@@ -61,7 +79,55 @@ def mid():
         first = json_data['select_idols'][0]
         del json_data['select_idols'][0]
     else:
-        return
+        point = config.Point()
+        for idol in json_data['back_up']:
+            # { value: 1048, name: 'Baidu' },
+            point.idol_dic[idol] = create_value(1, config.idol_json[idol]['roman'])
+            point.idol_color_dic[idol + '_c'] = "\"" + (config.idol_json[idol]['color']) + "\","
+        return render_template(
+            'ending.html',
+            # Ms=a,
+            # Aq=b,
+            # MsC=c,
+            # AqC=d,
+            Aida_Rikako=point.idol_dic["Aida_Rikako"],
+            Furihata_Ai=point.idol_dic["Furihata_Ai"],
+            Iida_Riho=point.idol_dic["Iida_Riho"],
+            Inami_Anju=point.idol_dic["Inami_Anju"],
+            Kobayashi_Aika=point.idol_dic["Kobayashi_Aika"],
+            Komiya_Arisa=point.idol_dic["Komiya_Arisa"],
+            Kubo_Yurika=point.idol_dic["Kubo_Yurika"],
+            Kusuda_Aina=point.idol_dic["Kusuda_Aina"],
+            Mimori_Suzuko=point.idol_dic["Mimori_Suzuko"],
+            Nanjo_Yoshino=point.idol_dic["Nanjo_Yoshino"],
+            Nitta_Emi=point.idol_dic["Nitta_Emi"],
+            Pile=point.idol_dic["Pile"],
+            Saito_Shuka=point.idol_dic["Saito_Shuka"],
+            Suwa_Nanaka=point.idol_dic["Suwa_Nanaka"],
+            Suzuki_Aina=point.idol_dic["Suzuki_Aina"],
+            Takatsuki_Kanako=point.idol_dic["Takatsuki_Kanako"],
+            Tokui_Sora=point.idol_dic["Tokui_Sora"],
+            Uchida_Aya=point.idol_dic["Uchida_Aya"],
+
+            Aida_Rikako_c=point.idol_color_dic["Aida_Rikako_c"],
+            Furihata_Ai_c=point.idol_color_dic["Furihata_Ai_c"],
+            Iida_Riho_c=point.idol_color_dic["Iida_Riho_c"],
+            Inami_Anju_c=point.idol_color_dic["Inami_Anju_c"],
+            Kobayashi_Aika_c=point.idol_color_dic["Kobayashi_Aika_c"],
+            Komiya_Arisa_c=point.idol_color_dic["Komiya_Arisa_c"],
+            Kubo_Yurika_c=point.idol_color_dic["Kubo_Yurika_c"],
+            Kusuda_Aina_c=point.idol_color_dic["Kusuda_Aina_c"],
+            Mimori_Suzuko_c=point.idol_color_dic["Mimori_Suzuko_c"],
+            Nanjo_Yoshino_c=point.idol_color_dic["Nanjo_Yoshino_c"],
+            Nitta_Emi_c=point.idol_color_dic["Nitta_Emi_c"],
+            Pile_c=point.idol_color_dic["Pile_c"],
+            Saito_Shuka_c=point.idol_color_dic["Saito_Shuka_c"],
+            Suwa_Nanaka_c=point.idol_color_dic["Suwa_Nanaka_c"],
+            Suzuki_Aina_c=point.idol_color_dic["Suzuki_Aina_c"],
+            Takatsuki_Kanako_c=point.idol_color_dic["Takatsuki_Kanako_c"],
+            Tokui_Sora_c=point.idol_color_dic["Tokui_Sora_c"],
+            Uchida_Aya_c=point.idol_color_dic["Uchida_Aya_c"]
+        )
     if first in config.idol_json.keys():
         json_data['file_list'], json_data['ans_num'] = get_all_pic(first)
     
@@ -78,7 +144,8 @@ def mid():
         p8=json_data['file_list'][7],
         p9=json_data['file_list'][8],
         ans=json_data['ans_num'],
-        idol_list=json_data['select_idols'],
+        idol_list_py=json_data['select_idols'],
+        back_up_py=json_data['back_up'],
         user_id=json_data['user_id']
     )
 

@@ -104,10 +104,17 @@
                 <script>
                     function verify() {
                         var user_id = "{{ user_id }}";
-                        var idol_list = []
-                        {% for idol in idol_list %}
-                            idol_list.push("{{ idol }}")
+                        
+                        var idol_list = [];
+                        {% for idol in idol_list_py %}
+                            idol_list.push("{{ idol }}");
                         {% endfor %}
+
+                        var back_up = [];
+                        {% for idol in back_up_py %}
+                            back_up.push("{{ idol }}");
+                        {% endfor %}
+
                         var ans = {{ ans }};
                         var select_list = [];
                         for (let i = 1; i < 10; i++) {
@@ -138,42 +145,20 @@
                         }
                         
                         setTimeout(function(){
-                            if(ans.toString() == select_list.toString())
-                            {
-                                // console.log(select_list);
-                                var json_data = {};
-                                json_data.user_id = user_id;
-                                json_data.select_idols = idol_list;
-                                $.post('http://192.168.31.11:173/mid', JSON.stringify(json_data), function (data, status) {
-                                    console.log(status);
-                                    console.log(data);
-                                    document.body.innerHTML="";
-                                    document.write(data);
-                                })
-                                return;
-                            }
-
                             var json_data = {};
                             json_data.user_id = user_id;
                             json_data.select_idols = idol_list;
+                            json_data.back_up = back_up;
+
                             $.post('http://192.168.31.11:173/mid', JSON.stringify(json_data), function (data, status) {
-                                console.log(status);
                                 document.body.innerHTML="";
+                                console.log(data);
                                 document.write(data);
                             })
                             return;
-                        }, 3000);
+                        }, 1500);
                     }
                 </script>
-                <!---->
-                <!-- <div class="alert-box success" style="display: none;">
-                    <i class="icon"></i>
-                    <p>恭喜猜对了，一定是爬了很多次大吉山的美少女</p>
-                </div>
-                <div class="alert-box wrong"style="display: none;">
-                    <i class="icon"></i>
-                    <p>再多爬几次试试？</p>
-                </div> -->
             </div>
         </div>
     </div>

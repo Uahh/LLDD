@@ -51,72 +51,28 @@
 						{
 							name: 'Access From',
 							type: 'pie',
-							selectedMode: 'single',
-							radius: [0, '30%'],
-							label: {
-								position: 'inner',
-								fontSize: 10
-							},
-							legend: {
-								show: false
-							},
-							labelLine: {
-								show: false
-							},
-							data: [
-								// { value: 679, name: 'Marketing', selected: true },
-								{{ Ms|safe }}
-								{{ Aq|safe }}
-								{{ Sa|safe }}
-								{{ Na|safe }}
-								{{ Li|safe }}
-							],
-							color:[{{Ms_c|safe}}, {{Aq_c|safe}}, {{Sa_c|safe}}, {{Na_c|safe}}, {{Li_c|safe}}]
-						},
-						{
-							name: 'Access From',
-							type: 'pie',
 							radius: ['45%', '60%'],
 							data: [
-								// { value: 1048, name: 'Baidu' },
-								{{ Nitta_Emi|safe }}
-								{{ Nanjo_Yoshino|safe }}
-								{{ Uchida_Aya|safe }}
-								{{ Mimori_Suzuko|safe }}
-								{{ Iida_Riho|safe }}
-								{{ Pile|safe }}
-								{{ Kusuda_Aina|safe }}
-								{{ Kubo_Yurika|safe }}
-								{{ Tokui_Sora|safe }}
-								{{ Inami_Anju|safe }}
-								{{ Aida_Rikako|safe }}
-								{{ Suwa_Nanaka|safe }}
-								{{ Komiya_Arisa|safe }}
-								{{ Saito_Shuka|safe }}
-								{{ Kobayashi_Aika|safe }}
-								{{ Takatsuki_Kanako|safe }}
-								{{ Suzuki_Aina|safe }}
-								{{ Furihata_Ai|safe }}
+								{ value: 1, name: "Inami Anju" },
+								{ value: 1, name: "Aida Rikako" },
+								,
+								,
+								,
+								,
+								,
+								,
+								,
 							],
 							color:[
-								{{ Nitta_Emi_c|safe }}
-								{{ Nanjo_Yoshino_c|safe }}
-								{{ Uchida_Aya_c|safe }}
-								{{ Mimori_Suzuko_c|safe }}
-								{{ Iida_Riho_c|safe }}
-								{{ Pile_c|safe }}
-								{{ Kusuda_Aina_c|safe }}
-								{{ Kubo_Yurika_c|safe }}
-								{{ Tokui_Sora_c|safe }}
-								{{ Inami_Anju_c|safe }}
-								{{ Aida_Rikako_c|safe }}
-								{{ Suwa_Nanaka_c|safe }}
-								{{ Komiya_Arisa_c|safe }}
-								{{ Saito_Shuka_c|safe }}
-								{{ Kobayashi_Aika_c|safe }}
-								{{ Takatsuki_Kanako_c|safe }}
-								{{ Suzuki_Aina_c|safe }}
-								{{ Furihata_Ai_c|safe }}
+								"#FF9933",
+								"#FF7777",
+								,
+								,
+								,
+								,
+								,
+								,
+								,
 							]
 						}
 					]
@@ -145,9 +101,3 @@
 			</div>
 		</div>
 	</div>
-
-
-</body>
-<script id="ribbon" size="50" alpha='0.3' zIndex="-1" src="../static/js/canvas-ribbon.min.js"></script>
-
-</html>

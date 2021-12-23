@@ -1,103 +1,112 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh">
 
 <head>
-	<meta charset="utf-8" />
-	<title>The 1140px Grid &middot; Fluid down to mobile</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="../static/css/1140.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="../static/css/styles.css" type="text/css" media="screen" />
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-	<style type="text/css">
-		body {
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-			background: #F8F8F5;
-		}
-		.container h2 {
-			/* color: #fff; */
-			line-height: 60px;
-			margin: 20px 0 0 0;
-		}
-		.container h1 {
-			/* color: #fff; */
-			line-height: 100px;
-			margin: 20px 0 0 0;
-		}
-	</style>
-
+    <meta charset="UTF-8">
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css" />
+    <link rel="stylesheet" href="../static/css/1140.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../static/css/styles.css" type="text/css" media="screen" />
+    <style type="text/css">
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #F8F8F5;
+        }
+    </style>
 </head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="sevencol last">
-				<h1>鉴定报告</h1>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div id="main" class="fivecol" style="width: 400px;height:400px;"></div>
-			<script type="text/javascript">
-				var Pie = document.getElementById('main');
-				var myChart = echarts.init(Pie);
-				var option;
-				option = {
-					tooltip: {
-						trigger: 'item',
-						formatter: '{b}: {c} ({d}%)'
-						// formatter: '{a} <br/>{b}: {c} ({d}%)'
-					},
-					series: [
-						{
-							name: 'Access From',
-							type: 'pie',
-							radius: ['45%', '60%'],
-							data: [
-								{ value: 1, name: "Inami Anju" },
-								{ value: 1, name: "Aida Rikako" },
-								,
-								,
-								,
-								,
-								,
-								,
-								,
-							],
-							color:[
-								"#FF9933",
-								"#FF7777",
-								,
-								,
-								,
-								,
-								,
-								,
-								,
-							]
-						}
-					]
-				};
-				option && myChart.setOption(option);
-			</script>
-			<div class="sevencol last">
-				<h2></h2>
-				<h2></h2>
-				<h2>经过专业的鉴定，您是专一的伊波杏树推</h2>
-				<p>巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>	
-				<p>巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴巴拉巴拉巴拉</p>	
-				<p>巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>	
-			</div>
-		</div>
-	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="threecol">
-			</div>
-			<div class="sixcol">
-			</div>
-			<div class="threecol last"  style="text-align: right;">
-				<p>Three columns</p>
-			</div>
-		</div>
-	</div>
+<body id="app" style="background: #F8F8F5;">
+    <div class="container">
+        <div class="row">
+            <div class="threecol">
+            </div>
+            <div class="sixcol">
+                <div style="box-shadow: 0 1px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04); border-radius: 4px; margin: 20px;">
+                    <div style="height: 24; background: {{ color }}; border-radius: 4px;">
+                        <h1 style="color: {{ color }};">Love 173</h1>
+                    </div>
+                    <p style="margin: 20px 0px 0px 20px;text-align: left;">{{ topic }}</p>
+                    <div style="margin: 20px 0px 0px 20px;text-align: left;">
+                        <el-radio v-model="radio" label="a" value="a" name="choice1" style="margin: 1px 10px 1px 20px">{{ A }}</el-radio>
+                        </br>
+                        <el-radio v-model="radio" label="b" value="b" name="choice2" style="margin: 1px 10px 1px 20px">{{ B }}</el-radio>
+                        </br>
+                        <el-radio v-model="radio" label="c" value="c" name="choice3" style="margin: 1px 10px 1px 20px">{{ C }}</el-radio>
+                        </br>
+                        <el-radio v-model="radio" label="d" value="d" name="choice4" style="margin: 1px 10px 1px 20px">{{ D }}</el-radio>
+                    </div>
+                </div>
+                <el-button onclick="func_next()" type="primary" plain>提交</el-button>
+            </div>
+            <div class="threecol last" style="text-align: right;">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <el-progress :percentage="{{ percent }}" text-inside="true" :stroke-width="15"></el-progress>
+    </footer>
+    <script>
+        var Main = {
+            data() {
+                return {
+                    radio: '1'
+                };
+            }
+        }
+    
+        if(typeof(Ctor) == "undefined" || Ctor == null){
+            const Ctor = Vue.createApp(Main);
+            Ctor.use(ElementPlus);
+            Ctor.mount("#app");
+        }    
+
+        var user_id = "{{user_id}}";
+        var ans = "{{ ans }}";
+        var question_index = {{ question_index }};
+        var percent = {{ percent }};
+        var questions = [];
+        {% for idol in questions_py %}
+            questions.push("{{ idol }}");
+        {% endfor %}
+
+        var back_up = [];
+        {% for idol in back_up_py %}
+            back_up.push("{{ idol }}");
+        {% endfor %}
+
+        var point = [];
+        {% for p in point_py %}
+            point.push("{{ p }}");
+        {% endfor %}
+
+        function func_next(){
+            var selection = $("input[type='radio']:checked").val();
+            console.log(selection)
+            var json_data = {};
+
+            if(ans == selection)
+                point.push(1)
+            else
+                point.push(0)
+
+            json_data.select_idols = [];
+            json_data.user_id = user_id;
+            json_data.back_up = back_up;
+            json_data.questions = questions;
+            json_data.percent = percent;
+            json_data.question_index = question_index + 1;
+            json_data.point = point;
+            console.log(JSON.stringify(json_data))
+            $.post('http://192.168.31.11:173/mid', JSON.stringify(json_data), function (data, status) {
+                console.log(status);
+                document.body.innerHTML="";
+                document.write(data);
+            })
+        }
+    </script>
+</body>
+</html>

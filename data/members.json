@@ -107,7 +107,25 @@
             "Cyaron!",
             "Aqours"
         ],
-        "picture": "picture/Inami_Anju"
+        "picture": "picture/Inami_Anju",
+        "questions":[
+            {
+                "topic": "以下哪项是伊波杏树的特长？",
+                "a":"A.摄影",
+                "b":"B.拳击",
+                "c":"C.空手道",
+                "d":"D.绘画",
+                "answer":"c"
+            },
+            {
+                "topic": "以下哪项不是伊波杏树最喜欢的动物？",
+                "a":"A.水母",
+                "b":"B.乌贼",
+                "c":"C.鲨鲨",
+                "d":"D.海豚",
+                "answer":"d"
+            }
+        ]
     },
     "Aida_Rikako": {
         "name": "逢田梨香子",
@@ -118,7 +136,25 @@
             "Guilty Kiss",
             "Aqours"
         ],
-        "picture": "picture/Aida_Rikako"
+        "picture": "picture/Aida_Rikako",
+        "questions":[
+            {
+                "topic": "以下哪项是逢田梨香子的特长？",
+                "a":"A.摄影",
+                "b":"B.拳击",
+                "c":"C.空手道",
+                "d":"D.绘画",
+                "answer":"c"
+            },
+            {
+                "topic": "以下哪项不是逢田梨香子最喜欢的动物？",
+                "a":"A.水母",
+                "b":"B.乌贼",
+                "c":"C.鲨鲨",
+                "d":"D.海豚",
+                "answer":"d"
+            }
+        ]
     },
     "Suwa_Nanaka": {
         "name": "诹访奈奈香",

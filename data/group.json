@@ -1,34 +1,34 @@
 {
-    "group":[
-        {
-            "name": "μ's",
-            "japanese_name": "μ's",
-            "member":[
-                "Nitta Emi",
-                "Nanjō Yoshino",
-                "Uchida Aya",
-                "Mimori Suzuko",
-                "Iida Riho",
-                "Pile",
-                "Kubo Yurika",
-                "Tokui Sora",
-                "Kusuda Aina"
-            ]
-        },
-        {
-            "name": "Aqours",
-            "japanese_name": "Aqours",
-            "member":[
-                "Inami Anju",
-                "Aida Rikako",
-                "Suwa Nanaka",
-                "Komiya Arisa",
-                "Saitō Shuka",
-                "Kobayashi Aika",
-                "Takatsuki Kanako",
-                "Suzuki Aina",
-                "Furihata Ai"
-            ]
-        }
-    ]
+    "μ's": {
+        "name": "μ's",
+        "japanese_name": "μ's",
+        "member": [
+            "Nitta Emi",
+            "Nanjo Yoshino",
+            "Uchida Aya",
+            "Mimori Suzuko",
+            "Iida Riho",
+            "Pile",
+            "Kubo Yurika",
+            "Tokui Sora",
+            "Kusuda Aina"
+        ],
+        "color": "#E4007F"
+    },
+    "Aqours": {
+        "name": "Aqours",
+        "japanese_name": "Aqours",
+        "member": [
+            "Inami Anju",
+            "Aida Rikako",
+            "Suwa Nanaka",
+            "Komiya Arisa",
+            "Saito Shuka",
+            "Kobayashi Aika",
+            "Takatsuki Kanako",
+            "Suzuki Aina",
+            "Furihata Ai"
+        ],
+        "color": "#00A1E9"
+    }
 }

@@ -350,3 +350,9 @@ input.labelauty:checked+label {
 .Aoyama_Nagisa.labelauty:checked:not([disabled])+label:hover {
 	background-color: #2828A0;
 }
+
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0
+  }

@@ -239,9 +239,6 @@
 
     $(function () {
         $("#start").click(function () {
-            // var key = $("#ipt").val();
-            // var url = "/passer_war_exploded/page/search/" + key;
-            // location.href = url;
             var select_data = $('input:checkbox[name="idol_list"]:checked').map(function () {
                 return $(this).val();
             });
@@ -249,9 +246,11 @@
             var json_data = {};
             json_data.user_id = user_id;
             json_data.select_idols = [];
+            json_data.questions = [];
             json_data.back_up = [];
             for (var i = 0; i < select_data.length; i++) {
                 json_data.select_idols.push(select_data[i]);
+                json_data.questions.push(select_data[i]);
                 json_data.back_up.push(select_data[i]);
             }
             console.log(JSON.stringify(json_data))

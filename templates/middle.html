@@ -7,12 +7,15 @@
     <title>验证</title>
     <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.0-beta.7/vue.global.prod.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/vue-router/4.0.10/vue-router.global.prod.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css" />
     <link rel="stylesheet" href="../static/css/bbk.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 
 <body>
-    <div id="app" data-v-app="">
+    <div data-v-app="">
         <div>
             <div class="captcha-box">
                 <div class="head-box">
@@ -110,9 +113,19 @@
                             idol_list.push("{{ idol }}");
                         {% endfor %}
 
+                        var questions = [];
+                        {% for idol in questions_py %}
+                            questions.push("{{ idol }}");
+                        {% endfor %}
+
                         var back_up = [];
                         {% for idol in back_up_py %}
                             back_up.push("{{ idol }}");
+                        {% endfor %}
+
+                        var point = [];
+                        {% for p in point_py %}
+                            point.push("{{ p }}");
                         {% endfor %}
 
                         var ans = {{ ans }};
@@ -146,16 +159,27 @@
                         
                         setTimeout(function(){
                             var json_data = {};
+                            json_data.percent = {{ percent }};
                             json_data.user_id = user_id;
                             json_data.select_idols = idol_list;
                             json_data.back_up = back_up;
+                            json_data.questions = questions;
+                            json_data.question_index = 1;
+
+                            temp = right_list.length - error_list.length;
+                            if(temp > 0)
+                                point.push(temp / ans.length);
+                            else
+                                point.push(0);
+
+                            json_data.point = point;
 
                             $.post('http://192.168.31.11:173/mid', JSON.stringify(json_data), function (data, status) {
                                 document.body.innerHTML="";
                                 console.log(data);
                                 document.write(data);
                             })
-                            return;
+                            return; 
                         }, 1500);
                     }
                 </script>
@@ -163,8 +187,23 @@
         </div>
     </div>
 
-
-
+    <footer id="app">
+        <el-progress :percentage="{{ percent }}" text-inside="true" :stroke-width="15"></el-progress>
+    </footer>
+    <script>
+        var Main = {
+                methods: {
+                format(percentage) {
+                    return percentage === 100 ? '满' : `${percentage}%`;
+                }
+            }
+        }
+        if(typeof(Per) == "undefined" || Per == null){
+            let Per = Vue.createApp(Main);
+            Per.use(ElementPlus);
+            Per.mount("#app");
+        }
+    </script>
 </body>
 
 </html>

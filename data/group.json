@@ -30,5 +30,26 @@
             "Furihata Ai"
         ],
         "color": "#00A1E9"
+    },
+    "Saint Snow": {
+        "name": "Saint Snow",
+        "japanese_name": "Saint Snow",
+        "member": [
+        ],
+        "color": "#CB3935"
+    },
+    "虹ヶ咲学園スクールアイドル同好会": {
+        "name": "虹咲学园学园偶像同好会",
+        "japanese_name": "虹ヶ咲学園スクールアイドル同好会",
+        "member": [
+        ],
+        "color": "#F39800"
+    },
+    "Liella": {
+        "name": "Liella",
+        "japanese_name": "Liella",
+        "member": [
+        ],
+        "color": "#A5469B"
     }
 }

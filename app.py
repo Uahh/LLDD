@@ -149,8 +149,14 @@ def mid():
             total_point=total_point,
             Ms=Point.idol_group["μ's"],
             Aq=Point.idol_group["Aqours"],
+            Na=Point.idol_group["Saint Snow"],
+            Sa=Point.idol_group["虹ヶ咲学園スクールアイドル同好会"],
+            Li=Point.idol_group["Liella"],
             Ms_c=Point.idol_color_group["μ's_c"],
             Aq_c=Point.idol_color_group["Aqours_c"],
+            Na_c=Point.idol_color_group["Saint Snow_c"],
+            Sa_c=Point.idol_color_group["虹ヶ咲学園スクールアイドル同好会_c"],
+            Li_c=Point.idol_color_group["Liella_c"],
 
             Aida_Rikako=Point.idol_dic["Aida_Rikako"],
             Furihata_Ai=Point.idol_dic["Furihata_Ai"],
@@ -170,6 +176,26 @@ def mid():
             Takatsuki_Kanako=Point.idol_dic["Takatsuki_Kanako"],
             Tokui_Sora=Point.idol_dic["Tokui_Sora"],
             Uchida_Aya=Point.idol_dic["Uchida_Aya"],
+            Sato_Hinata=Point.idol_dic["Sato_Hinata"],
+            Tano_Asami=Point.idol_dic["Tano_Asami"],
+            Onishi_Aguri=Point.idol_dic["Onishi_Aguri"],
+            Sagara_Mayu=Point.idol_dic["Sagara_Mayu"],
+            Maeda_Kaori=Point.idol_dic["Maeda_Kaori"],
+            Kubota_Miyu=Point.idol_dic["Kubota_Miyu"],
+            Murakami_Natsumi=Point.idol_dic["Murakami_Natsumi"],
+            Kito_Akari=Point.idol_dic["Kito_Akari"],
+            Kusunoki_Tomori=Point.idol_dic["Kusunoki_Tomori"],
+            Sashide_Maria=Point.idol_dic["Sashide_Maria"],
+            Tanaka_Chiemi=Point.idol_dic["Tanaka_Chiemi"],
+            Koizumi_Moeka=Point.idol_dic["Koizumi_Moeka"],
+            Uchida_Shu=Point.idol_dic["Uchida_Shu"],
+            Houmoto_Akina=Point.idol_dic["Houmoto_Akina"],
+            Yano_Hinaki=Point.idol_dic["Yano_Hinaki"],
+            Date_Sayuri=Point.idol_dic["Date_Sayuri"],
+            Liyuu=Point.idol_dic["Liyuu"],
+            Misaki_Nako=Point.idol_dic["Misaki_Nako"],
+            Payton_Naomi=Point.idol_dic["Payton_Naomi"],
+            Aoyama_Nagisa=Point.idol_dic["Aoyama_Nagisa"],
 
             Aida_Rikako_c=Point.idol_color_dic["Aida_Rikako_c"],
             Furihata_Ai_c=Point.idol_color_dic["Furihata_Ai_c"],
@@ -188,7 +214,27 @@ def mid():
             Suzuki_Aina_c=Point.idol_color_dic["Suzuki_Aina_c"],
             Takatsuki_Kanako_c=Point.idol_color_dic["Takatsuki_Kanako_c"],
             Tokui_Sora_c=Point.idol_color_dic["Tokui_Sora_c"],
-            Uchida_Aya_c=Point.idol_color_dic["Uchida_Aya_c"]
+            Uchida_Aya_c=Point.idol_color_dic["Uchida_Aya_c"],
+            Sato_Hinata_c=Point.idol_color_dic["Sato_Hinata_c"],
+            Tano_Asami_c=Point.idol_color_dic["Tano_Asami_c"],
+            Onishi_Aguri_c=Point.idol_color_dic["Onishi_Aguri_c"],
+            Sagara_Mayu_c=Point.idol_color_dic["Sagara_Mayu_c"],
+            Maeda_Kaori_c=Point.idol_color_dic["Maeda_Kaori_c"],
+            Kubota_Miyu_c=Point.idol_color_dic["Kubota_Miyu_c"],
+            Murakami_Natsumi_c=Point.idol_color_dic["Murakami_Natsumi_c"],
+            Kito_Akari_c=Point.idol_color_dic["Kito_Akari_c"],
+            Kusunoki_Tomori_c=Point.idol_color_dic["Kusunoki_Tomori_c"],
+            Sashide_Maria_c=Point.idol_color_dic["Sashide_Maria_c"],
+            Tanaka_Chiemi_c=Point.idol_color_dic["Tanaka_Chiemi_c"],
+            Koizumi_Moeka_c=Point.idol_color_dic["Koizumi_Moeka_c"],
+            Uchida_Shu_c=Point.idol_color_dic["Uchida_Shu_c"],
+            Houmoto_Akina_c=Point.idol_color_dic["Houmoto_Akina_c"],
+            Yano_Hinaki_c=Point.idol_color_dic["Yano_Hinaki_c"],
+            Date_Sayuri_c=Point.idol_color_dic["Date_Sayuri_c"],
+            Liyuu_c=Point.idol_color_dic["Liyuu_c"],
+            Misaki_Nako_c=Point.idol_color_dic["Misaki_Nako_c"],
+            Payton_Naomi_c=Point.idol_color_dic["Payton_Naomi_c"],
+            Aoyama_Nagisa_c=Point.idol_color_dic["Aoyama_Nagisa_c"]
         )
 
     # 图片
@@ -239,4 +285,4 @@ def error():
     return '404 not found'
 
 
-app.run(host='0.0.0.0', debug=False, port=17173)  # inami
+app.run(host='0.0.0.0', debug=False, port=173)  # inami

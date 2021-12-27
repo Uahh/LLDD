@@ -8,7 +8,25 @@
             "",
             "μ's"
         ],
-        "picture": "picture/Nitta_Emi"
+        "picture": "picture/Nitta_Emi",
+        "questions": [
+            {
+                "topic": "以下哪项不是新田惠海的爱好？",
+                "a": "A.摄影",
+                "b": "B.卡拉OK",
+                "c": "C.咖啡厅巡游",
+                "d": "D.研究恐龙",
+                "answer": "a"
+            },
+            {
+                "topic": "高中时新田惠海曾经跳水庆祝左脚骨折痊愈，结果____。",
+                "a": "A.落水水花很小，展现出跳水的天赋",
+                "b": "B.尝试了后空翻，并成功了",
+                "c": "C.扭到右脚",
+                "d": "D.腿抽筋了",
+                "answer": "c"
+            }
+        ]
     },
     "Nanjo_Yoshino": {
         "name": "南条爱乃",
@@ -19,7 +37,25 @@
             "",
             "μ's"
         ],
-        "picture": "picture/Nanjo_Yoshino"
+        "picture": "picture/Nanjo_Yoshino",
+        "questions": [
+            {
+                "topic": "众所周知，南条爱乃喜欢巧克力，特别是生巧克力，但讨厌加了____的巧克力。",
+                "a": "A.可乐",
+                "b": "B.酒",
+                "c": "C.奶油",
+                "d": "D.杏仁",
+                "answer": "b"
+            },
+            {
+                "topic": "南条爱乃除了工作之外不太喜欢出门，基本上都是宅在家里肝____",
+                "a": "A.APEX",
+                "b": "B.最终幻想14",
+                "c": "C.健身环大冒险",
+                "d": "D.动物森友会",
+                "answer": "a"
+            }
+        ]
     },
     "Uchida_Aya": {
         "name": "内田彩",
@@ -30,7 +66,25 @@
             "",
             "μ's"
         ],
-        "picture": "picture/Uchida_Aya"
+        "picture": "picture/Uchida_Aya",
+        "questions": [
+            {
+                "topic": "彩彩在舞台和生放送中补水次数异常的多, 被粉丝们亲切的称为补水鸟。由此自黑的建立niconico生放送个人栏目名为____",
+                "a": "A.《水水》",
+                "b": "B.《请给内田彩更多的水》",
+                "c": "C.《吸溜吸溜吸溜》",
+                "d": "D.《一天要喝八杯水》",
+                "answer": "b"
+            },
+            {
+                "topic": "在Aqours中饰演小原鞠莉的铃木爱奈和彩彩一样也是在7月__日出生。2019年，两位同一天出生的声优完成了史诗级合照。",
+                "a": "A.23",
+                "b": "B.22",
+                "c": "C.21",
+                "d": "D.20",
+                "answer": "a"
+            }
+        ]
     },
     "Mimori_Suzuko": {
         "name": "三森铃子",
@@ -41,7 +95,25 @@
             "lily white",
             "μ's"
         ],
-        "picture": "picture/Mimori_Suzuko"
+        "picture": "picture/Mimori_Suzuko",
+        "questions": [
+            {
+                "topic": "三森热爱舞台，MH初次登上武道馆时被说了“不要在舞台上哭，舞台是传递快乐的地方”，导致除了在____舞台上很少会哭",
+                "a": "A.LoveLive!",
+                "b": "B.MH",
+                "c": "C.Solo",
+                "d": "D.摔角",
+                "answer": "c"
+            },
+            {
+                "topic": "三森虽然被很多人喜欢，但与从早期一直在一起到现在的____关系不错，有深厚交情，甚至都有点击破万的MAD和表白合集",
+                "a": "A.新田惠海",
+                "b": "B.南条爱乃",
+                "c": "C.德井青空",
+                "d": "D.Pile",
+                "answer": "c"
+            }
+        ]
     },
     "Iida_Riho": {
         "name": "饭田里穗",
@@ -52,7 +124,25 @@
             "",
             "μ's"
         ],
-        "picture": "picture/Iida_Riho"
+        "picture": "picture/Iida_Riho",
+        "questions": [
+            {
+                "topic": "Rippi是左撇子，右手的劲力在μ’s九人中最弱，且至今为止在LoveLive!的演唱会曲目____中连着三次没有一次自己成功地用一只手打开过扇子",
+                "a": "A.Music S.T.A.R.T!!",
+                "b": "B.Wonder zone",
+                "c": "C.輝夜の城で踊りたい",
+                "d": "D.だってだって噫無情",
+                "answer": "c"
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
     },
     "Pile": {
         "name": "Pile",
@@ -63,7 +153,25 @@
             "",
             "μ's"
         ],
-        "picture": "picture/Pile"
+        "picture": "picture/Pile",
+        "questions": [
+            {
+                "topic": "Pile因为每次出场____都会发生改变，所以被粉丝称为Pile48",
+                "a": "A.发型",
+                "b": "B.发卡",
+                "c": "C.服装",
+                "d": "D.表情",
+                "answer": "a"
+            },
+            {
+                "topic": "Pile在选定solo应援色的时候，说要____的，“那是我最重要的一位（德井青空)...对，希望大家都换成这个人的颜色（nico手势），那我也会niconiconi(矢泽妮可)的。”",
+                "a": "A.蓝色",
+                "b": "B.绿色",
+                "c": "C.橙色",
+                "d": "D.粉色",
+                "answer": "d"
+            }
+        ]
     },
     "Kusuda_Aina": {
         "name": "楠田亚衣奈",
@@ -74,7 +182,25 @@
             "",
             "μ's"
         ],
-        "picture": "picture/Kusuda_Aina"
+        "picture": "picture/Kusuda_Aina",
+        "questions": [
+            {
+                "topic": "LoveLive ____的Day2是楠田亚衣奈的26岁生日，被其他成员的惊喜弄得喜极而泣。并在感言时表示“这样的生日或许一生只有一次”",
+                "a": "A.5th",
+                "b": "B.4th",
+                "c": "C.3th",
+                "d": "D.2th",
+                "answer": "a"
+            },
+            {
+                "topic": "楠田亚衣奈与南条爱乃身高同为____",
+                "a": "A.160cm",
+                "b": "B.150cm",
+                "c": "C.155cm",
+                "d": "D.300cm",
+                "answer": "b"
+            }
+        ]
     },
     "Kubo_Yurika": {
         "name": "久保由利香",
@@ -85,7 +211,25 @@
             "",
             "μ's"
         ],
-        "picture": "picture/Kubo_Yurika"
+        "picture": "picture/Kubo_Yurika",
+        "questions": [
+            {
+                "topic": "小鹿喜欢看宝可梦系列、哈姆太郎和火影忍者。在火影忍者中最喜欢的角色是____",
+                "a": "A.宇智波鼬",
+                "b": "B.奈良鹿丸",
+                "c": "C.旗木卡卡西",
+                "d": "D.日向宁次",
+                "answer": "b"
+            },
+            {
+                "topic": "小鹿不定期在Ustream上发布网上直播节目《我的鹿不可能这么○○○》。在这个谈话节目中，小鹿一边喝酒，一边和staff配音的____聊天、和观众实时交流。",
+                "a": "A.布偶鹿",
+                "b": "B.布偶猪",
+                "c": "C.布偶羊",
+                "d": "D.布偶鲨鲨",
+                "answer": "b"
+            }
+        ]
     },
     "Tokui_Sora": {
         "name": "德井青空",
@@ -96,7 +240,25 @@
             "",
             "μ's"
         ],
-        "picture": "picture/Tokui_Sora"
+        "picture": "picture/Tokui_Sora",
+        "questions": [
+            {
+                "topic": "德井非常擅长漫画，已经可以在杂志上发表四格连载，其漫画____已经动画化",
+                "a": "A.《魔法少女自宅酱》",
+                "b": "B.《不要输!!恶之军团!》",
+                "c": "C.《侦探歌剧 少女福尔摩斯》",
+                "d": "D.《请问您今天要来点兔子吗?》",
+                "answer": "b"
+            },
+            {
+                "topic": "德井某次fmt上聊到自己和角色相似的地方，为了帮三森圆场，说“德井x妮可的话，就是这个分开____的刘海了吧。”",
+                "a": "A.30°",
+                "b": "B.25°",
+                "c": "C.35°",
+                "d": "D.27.5°",
+                "answer": "c"
+            }
+        ]
     },
     "Inami_Anju": {
         "name": "伊波杏树",
@@ -108,22 +270,22 @@
             "Aqours"
         ],
         "picture": "picture/Inami_Anju",
-        "questions":[
+        "questions": [
             {
                 "topic": "以下哪项是伊波杏树的特长？",
-                "a":"A.摄影",
-                "b":"B.拳击",
-                "c":"C.空手道",
-                "d":"D.绘画",
-                "answer":"c"
+                "a": "A.摄影",
+                "b": "B.拳击",
+                "c": "C.空手道",
+                "d": "D.绘画",
+                "answer": "c"
             },
             {
-                "topic": "以下哪项不是伊波杏树最喜欢的动物？",
-                "a":"A.水母",
-                "b":"B.乌贼",
-                "c":"C.鲨鲨",
-                "d":"D.海豚",
-                "answer":"d"
+                "topic": "杏树在奇思妙想广播中自述：“一个人去水族馆时，没事的话会在一个水槽前看一个多小时再去下一个水槽前看一个多小时”。最喜欢的前三种动物是水母、乌贼和____",
+                "a": "A.鲤鱼",
+                "b": "B.鲸鱼",
+                "c": "C.鲨鲨",
+                "d": "D.海豚",
+                "answer": "c"
             }
         ]
     },
@@ -137,22 +299,22 @@
             "Aqours"
         ],
         "picture": "picture/Aida_Rikako",
-        "questions":[
+        "questions": [
             {
-                "topic": "以下哪项是逢田梨香子的特长？",
-                "a":"A.摄影",
-                "b":"B.拳击",
-                "c":"C.空手道",
-                "d":"D.绘画",
-                "answer":"c"
+                "topic": "逢田桑本来不擅长弹钢琴，但为了Aqours的live而专门特训了几个月。最终在1st live的Day.1上成功弹奏了钢琴，Day.2虽因为紧张而失误最后在成员的安慰下还是完美完成了演奏。在2019年1月播出的东蛋之路33:00左右，表示自己自那开始有了心理阴影，视频中彩排采访的时候碰钢琴的时候手都还有点在抖，但是在____live上成功完成了九人版本的想いよひとつになれ后克服了恐惧",
+                "a": "A.2th",
+                "b": "B.3th",
+                "c": "C.4th",
+                "d": "D.5th",
+                "answer": "c"
             },
             {
-                "topic": "以下哪项不是逢田梨香子最喜欢的动物？",
-                "a":"A.水母",
-                "b":"B.乌贼",
-                "c":"C.鲨鲨",
-                "d":"D.海豚",
-                "answer":"d"
+                "topic": "逢田桑在第222回urrd中提到自己小时候的三个梦想。第一是歌手，第二是折纸手艺人，第三是____。",
+                "a": "A.美少女战士",
+                "b": "B.漫画家",
+                "c": "C.演员",
+                "d": "D.小说家",
+                "answer": "a"
             }
         ]
     },
@@ -165,7 +327,25 @@
             "AZALEA",
             "Aqours"
         ],
-        "picture": "picture/Suwa_Nanaka"
+        "picture": "picture/Suwa_Nanaka",
+        "questions": [
+            {
+                "topic": "诹访奈奈香曾报名参加过SIF全国大赛，但在____被淘汰。",
+                "a": "A.预赛",
+                "b": "B.1/4决赛",
+                "c": "C.半决赛",
+                "d": "D.决赛",
+                "answer": "a"
+            },
+            {
+                "topic": "诹访奈奈香最喜欢的侦探漫画是____。",
+                "a": "A.《金田一少年事件簿》",
+                "b": "B.《名侦探柯南》",
+                "c": "C.《Gosick》",
+                "d": "D.《侦探学院Q》",
+                "answer": "b"
+            }
+        ]
     },
     "Komiya_Arisa": {
         "name": "小宫有纱",
@@ -176,7 +356,25 @@
             "AZALEA",
             "Aqours"
         ],
-        "picture": "picture/Komiya_Arisa"
+        "picture": "picture/Komiya_Arisa",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
     },
     "Saito_Shuka": {
         "name": "齐藤朱夏",
@@ -187,7 +385,25 @@
             "Cyaron!",
             "Aqours"
         ],
-        "picture": "picture/Saito_Shuka"
+        "picture": "picture/Saito_Shuka",
+        "questions": [
+            {
+                "topic": "咻卡一说到狗狗的话题便会非常兴奋，2018年开始养有一条名叫____的玩具型贵宾犬。曾多次在杂志上刊登与狗的合照，也曾带虎丸上过自己的节目。",
+                "a": "A.力丸",
+                "b": "B.虎丸",
+                "c": "C.风太",
+                "d": "D.茶茶",
+                "answer": "b"
+            },
+            {
+                "topic": "咻卡出道时身高是____.5cm，曾经着重强调过这是“尊严的0.5cm”。2020年在推特上汇报身高跨越这0.5cm了",
+                "a": "A.149",
+                "b": "B.150",
+                "c": "C.151",
+                "d": "D.152",
+                "answer": "b"
+            }
+        ]
     },
     "Kobayashi_Aika": {
         "name": "小林爱香",
@@ -198,7 +414,25 @@
             "Guilty Kiss",
             "Aqours"
         ],
-        "picture": "picture/Kobayashi_Aika"
+        "picture": "picture/Kobayashi_Aika",
+        "questions": [
+            {
+                "topic": "爱香的第一本写真集的拍摄地点位于____",
+                "a": "A.北海道",
+                "b": "B.东京",
+                "c": "C.沼津",
+                "d": "D.台湾",
+                "answer": "d"
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
     },
     "Takatsuki_Kanako": {
         "name": "高槻加奈子",
@@ -209,7 +443,25 @@
             "AZALEA",
             "Aqours"
         ],
-        "picture": "picture/Takatsuki_Kanako"
+        "picture": "picture/Takatsuki_Kanako",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
     },
     "Suzuki_Aina": {
         "name": "铃木爱奈",
@@ -220,7 +472,25 @@
             "Guilty Kiss",
             "Aqours"
         ],
-        "picture": "picture/Suzuki_Aina"
+        "picture": "picture/Suzuki_Aina",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
     },
     "Furihata_Ai": {
         "name": "降幡爱",
@@ -231,6 +501,604 @@
             "Cyaron!",
             "Aqours"
         ],
-        "picture": "picture/Furihata_Ai"
+        "picture": "picture/Furihata_Ai",
+        "questions": [
+            {
+                "topic": "以下哪项不是降幡爱所感兴趣的事？",
+                "a": "A.音乐鉴赏",
+                "b": "B.摄影",
+                "c": "C.绘画",
+                "d": "D.摔角",
+                "answer": "d"
+            },
+            {
+                "topic": "2020年6月11日，降幡爱宣布个人歌手出道，个人首张迷你专辑「Moonrise」的歌曲风格为____。",
+                "a": "A.摇滚乐",
+                "b": "B.昭和风",
+                "c": "C.重金属",
+                "d": "D.民谣",
+                "answer": "b"
+            }
+        ]
+    },
+    "Sato_Hinata": {
+        "name": "佐藤日向",
+        "japanese_name": "佐藤 日向",
+        "roman": "Sato Hinata",
+        "color": "#BBBBBB",
+        "group": [
+            "",
+            "Saint Snow"
+        ],
+        "picture": "picture/Sato_Hinata",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Tano_Asami": {
+        "name": "田野麻美",
+        "japanese_name": "田野 アサミ",
+        "roman": "Tano Asami",
+        "color": "#00CCFF",
+        "group": [
+            "",
+            "Saint Snow"
+        ],
+        "picture": "picture/Tano_Asami",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Onishi_Aguri": {
+        "name": "大西亚玖璃",
+        "japanese_name": "大西 亜玖璃",
+        "roman": "Ōnishi Aguri",
+        "color": "#ED7D95",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Onishi_Aguri",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Sagara_Mayu": {
+        "name": "相良茉优",
+        "japanese_name": "相良 茉優",
+        "roman": "Sagara Mayu",
+        "color": "#E7D600",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Sagara_Mayu",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Maeda_Kaori": {
+        "name": "前田佳织里",
+        "japanese_name": "前田 佳織里",
+        "roman": "Maeda Kaori",
+        "color": "#01B7ED",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Maeda_Kaori",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Kubota_Miyu": {
+        "name": "久保田未梦",
+        "japanese_name": "久保田 未夢",
+        "roman": "Kubota Miyu",
+        "color": "#485EC6",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Kubota_Miyu",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Murakami_Natsumi": {
+        "name": "村上奈津实",
+        "japanese_name": "村上 奈津実",
+        "roman": "Murakami Natsumi",
+        "color": "#FF5800",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Murakami_Natsumi",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Kito_Akari": {
+        "name": "鬼头明里",
+        "japanese_name": "鬼頭 明里",
+        "roman": "Kito Akari",
+        "color": "#A664A0",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Kito_Akari",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Kusunoki_Tomori": {
+        "name": "楠木灯",
+        "japanese_name": "楠木 ともり",
+        "roman": "Kusunoki Tomori",
+        "color": "#D81C2F",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Kusunoki_Tomori",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Sashide_Maria": {
+        "name": "指出毬亚",
+        "japanese_name": "指出 毬亜",
+        "roman": "Sashide Maria",
+        "color": "#84C36E",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Sashide_Maria",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Tanaka_Chiemi": {
+        "name": "田中千惠美",
+        "japanese_name": "田中 ちえ美",
+        "roman": "Tanaka Chiemi",
+        "color": "#9CA5B9",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Tanaka_Chiemi",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Koizumi_Moeka": {
+        "name": "小泉萌香",
+        "japanese_name": "小泉 萌香",
+        "roman": "Koizumi Moeka",
+        "color": "#37B484",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Koizumi_Moeka",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Uchida_Shu": {
+        "name": "内田秀",
+        "japanese_name": "内田 秀",
+        "roman": "Uchida Shū",
+        "color": "#A9A898",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Uchida_Shu",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Houmoto_Akina": {
+        "name": "法元明菜",
+        "japanese_name": "法元 明菜",
+        "roman": "Houmoto Akina",
+        "color": "#F69992",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Houmoto_Akina",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Yano_Hinaki": {
+        "name": "矢野妃菜喜",
+        "japanese_name": "矢野 妃菜喜",
+        "roman": "Yano Hinaki",
+        "color": "#000000",
+        "group": [
+            "",
+            "虹ヶ咲学園スクールアイドル同好会"
+        ],
+        "picture": "picture/Yano_Hinaki",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Date_Sayuri": {
+        "name": "伊达小百合",
+        "japanese_name": "伊達 さゆり",
+        "roman": "Date Sayuri",
+        "color": "#FF7F27",
+        "group": [
+            "",
+            "Liella"
+        ],
+        "picture": "picture/Date_Sayuri",
+        "questions": [
+            {
+                "topic": "在2021年5月30日的Liella!生放送中做出了堪称世界名画的模仿____的表情。",
+                "a": "A.狗",
+                "b": "B.猫头鹰",
+                "c": "C.猫",
+                "d": "D.麻雀",
+                "answer": "d"
+            },
+            {
+                "topic": "在海选现场为了疏解紧张而不停找人搭话，在和____打招呼时，被用演艺圈内用于当日初次见面的“早上好”回应而感到惊讶。",
+                "a": "A.青山渚",
+                "b": "B.岬奈子",
+                "c": "C.Payton尚未",
+                "d": "D.Liyuu",
+                "answer": "c"
+            }
+        ]
+    },
+    "Liyuu": {
+        "name": "Liyuu",
+        "japanese_name": "Liyuu",
+        "roman": "Liyuu",
+        "color": "#A0FFF9",
+        "group": [
+            "",
+            "Liella"
+        ],
+        "picture": "picture/Liyuu",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Misaki_Nako": {
+        "name": "岬奈子",
+        "japanese_name": "岬 なこ",
+        "roman": "Misaki Nako",
+        "color": "#FF6E90",
+        "group": [
+            "",
+            "Liella"
+        ],
+        "picture": "picture/Misaki_Nako",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Payton_Naomi": {
+        "name": "Payton尚未",
+        "japanese_name": "ペイトン 尚未",
+        "roman": "Payton Naomi",
+        "color": "#74F466",
+        "group": [
+            "",
+            "Liella"
+        ],
+        "picture": "picture/Payton_Naomi",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
+    },
+    "Aoyama_Nagisa": {
+        "name": "青山渚",
+        "japanese_name": "青山 なぎさ",
+        "roman": "Aoyama Nagisa",
+        "color": "#0000A0",
+        "group": [
+            "",
+            "Liella"
+        ],
+        "picture": "picture/Aoyama_Nagisa",
+        "questions": [
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            },
+            {
+                "topic": "",
+                "a": "A.",
+                "b": "B.",
+                "c": "C.",
+                "d": "D.",
+                "answer": ""
+            }
+        ]
     }
 }

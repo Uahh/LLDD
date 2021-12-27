@@ -103,6 +103,7 @@
             console.log(JSON.stringify(json_data))
             $.post('http://192.168.31.11:173/mid', JSON.stringify(json_data), function (data, status) {
                 console.log(status);
+                console.log(data);
                 document.body.innerHTML="";
                 document.write(data);
             })

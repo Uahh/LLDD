@@ -42,6 +42,6 @@ def cut_face(sourcePath, targetPath, *args):
                         count += 1
 
 if __name__ == '__main__':
-    sourcePath = r'D:\\Project\\LLDD\\picture\\nanjolno'
-    targetPath1 = r'D:\\Project\\LLDD\\picture\\nanjolno_cut'
+    sourcePath = r'D:\\suwa'
+    targetPath1 = r'D:\\suwaa'
     cut_face(sourcePath, targetPath1, '.jpg', '.JPG', 'png', 'PNG')

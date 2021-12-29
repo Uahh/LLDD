@@ -8,32 +8,35 @@
 	<link rel="stylesheet" href="../static/css/1140.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="../static/css/styles.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-	<style type="text/css">
-		body {
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-			background: #F8F8F5;
-		}
-		.container h2 {
-			/* color: #fff; */
-			line-height: 60px;
-			margin: 20px 0 0 0;
-		}
-		.container h1 {
-			/* color: #fff; */
-			line-height: 100px;
-			margin: 20px 0 0 0;
-		}
-	</style>
-
+    <style type="text/css">
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #F8F8F5;
+        }
+        .container h2 {
+            line-height: 60px;
+            margin: 20px 0 0 0;
+        }
+        .container h1 {
+            line-height: 80px;
+        }
+    </style>
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="sevencol last">
-				<h1>鉴定报告</h1>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="fivecol">
+                <h1 style="margin: 0 200 0 0;">鉴定报告</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="twelvecol">
+                <hr style="border:1px solid #999; float:right; width:95%;" />
+            </div>
+        </div>
+    </div>
 	<div class="container">
 		<div class="row">
 			<div id="main" class="fivecol" style="width: 400px;height:400px;"></div>
@@ -170,14 +173,48 @@
 				option && myChart.setOption(option);
 			</script>
 			<div class="sevencol last">
-				<h2></h2>
-				<h2></h2>
-				<h2>总分： {{ total_point }}</h2>
-				<h2></h2>
+				<h2 style="text-align: left;">DD指数： {{ total_point }}</h2>
 				<div style="text-align: left;">
-					<p>巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>	
-					<p>巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴巴拉巴拉巴拉</p>	
-					<p>巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>	
+					<p>{{ user_id }}的DD之心由：</p>
+					<p style="color: {{ Nitta_Emi_rc|safe }}">{{ Nitta_Emi_i|safe }} </p>
+					<p style="color: {{ Nanjo_Yoshino_rc|safe }}">{{ Nanjo_Yoshino_i|safe }} </p>
+					<p style="color: {{ Uchida_Aya_rc|safe }}">{{ Uchida_Aya_i|safe }} </p>
+					<p style="color: {{ Mimori_Suzuko_rc|safe }}">{{ Mimori_Suzuko_i|safe }} </p>
+					<p style="color: {{ Iida_Riho_rc|safe }}">{{ Iida_Riho_i|safe }} </p>
+					<p style="color: {{ Pile_rc|safe }}">{{ Pile_i|safe }} </p>
+					<p style="color: {{ Kusuda_Aina_rc|safe }}">{{ Kusuda_Aina_i|safe }} </p>
+					<p style="color: {{ Kubo_Yurika_rc|safe }}">{{ Kubo_Yurika_i|safe }} </p>
+					<p style="color: {{ Tokui_Sora_rc|safe }}">{{ Tokui_Sora_i|safe }} </p>
+					<p style="color: {{ Inami_Anju_rc|safe }}">{{ Inami_Anju_i|safe }} </p>
+					<p style="color: {{ Aida_Rikako_rc|safe }}">{{ Aida_Rikako_i|safe }} </p>
+					<p style="color: {{ Suwa_Nanaka_rc|safe }}">{{ Suwa_Nanaka_i|safe }} </p>
+					<p style="color: {{ Komiya_Arisa_rc|safe }}">{{ Komiya_Arisa_i|safe }} </p>
+					<p style="color: {{ Saito_Shuka_rc|safe }}">{{ Saito_Shuka_i|safe }} </p>
+					<p style="color: {{ Kobayashi_Aika_rc|safe }}">{{ Kobayashi_Aika_i|safe }} </p>
+					<p style="color: {{ Takatsuki_Kanako_rc|safe }}">{{ Takatsuki_Kanako_i|safe }} </p>
+					<p style="color: {{ Suzuki_Aina_rc|safe }}">{{ Suzuki_Aina_i|safe }} </p>
+					<p style="color: {{ Furihata_Ai_rc|safe }}">{{ Furihata_Ai_i|safe }} </p>
+					<p style="color: {{ Sato_Hinata_rc|safe }}">{{ Sato_Hinata_i|safe }} </p>
+					<p style="color: {{ Tano_Asami_rc|safe }}">{{ Tano_Asami_i|safe }} </p>
+					<p style="color: {{ Onishi_Aguri_rc|safe }}">{{ Onishi_Aguri_i|safe }} </p>
+					<p style="color: {{ Sagara_Mayu_rc|safe }}">{{ Sagara_Mayu_i|safe }} </p>
+					<p style="color: {{ Maeda_Kaori_rc|safe }}">{{ Maeda_Kaori_i|safe }} </p>
+					<p style="color: {{ Kubota_Miyu_rc|safe }}">{{ Kubota_Miyu_i|safe }} </p>
+					<p style="color: {{ Murakami_Natsumi_rc|safe }}">{{ Murakami_Natsumi_i|safe }} </p>
+					<p style="color: {{ Kito_Akari_rc|safe }}">{{ Kito_Akari_i|safe }} </p>
+					<p style="color: {{ Kusunoki_Tomori_rc|safe }}">{{ Kusunoki_Tomori_i|safe }} </p>
+					<p style="color: {{ Sashide_Maria_rc|safe }}">{{ Sashide_Maria_i|safe }} </p>
+					<p style="color: {{ Tanaka_Chiemi_rc|safe }}">{{ Tanaka_Chiemi_i|safe }} </p>
+					<p style="color: {{ Koizumi_Moeka_rc|safe }}">{{ Koizumi_Moeka_i|safe }} </p>
+					<p style="color: {{ Uchida_Shu_rc|safe }}">{{ Uchida_Shu_i|safe }} </p>
+					<p style="color: {{ Houmoto_Akina_rc|safe }}">{{ Houmoto_Akina_i|safe }} </p>
+					<p style="color: {{ Yano_Hinaki_rc|safe }}">{{ Yano_Hinaki_i|safe }} </p>
+					<p style="color: {{ Date_Sayuri_rc|safe }}">{{ Date_Sayuri_i|safe }} </p>
+					<p style="color: {{ Liyuu_rc|safe }}">{{ Liyuu_i|safe }} </p>
+					<p style="color: {{ Misaki_Nako_rc|safe }}">{{ Misaki_Nako_i|safe }} </p>
+					<p style="color: {{ Payton_Naomi_rc|safe }}">{{ Payton_Naomi_i|safe }} </p>
+					<p style="color: {{ Aoyama_Nagisa_rc|safe }}">{{ Aoyama_Nagisa_i|safe }} </p>
+					<p>构成</p>
 				</div>
 			</div>
 		</div>

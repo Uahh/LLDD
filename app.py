@@ -52,7 +52,10 @@ def create_value(value, name):
     ans = "{ value: V, name: \"N\" },"
     return ans.replace('V', str(value)).replace('N', name)
 
-# 主要逻辑视图函数
+
+def create_ins(value, name):
+    ans = "V% 的 N,"
+    return ans.replace('V', str(value)).replace('N', name)
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -123,29 +126,36 @@ def mid():
 
         temp_list = []
         for i in range(idol_length, idol_length * 3, 2):
-            temp_list.append(float(json_data['point'][i]) + float(json_data['point'][i + 1]))
-        
+            temp_list.append(
+                float(json_data['point'][i]) + float(json_data['point'][i + 1]))
+
         idol_point = [0] * idol_length
         idol_total_point = 0
         for i in range(0, idol_length):
             idol_point[i] = (float(json_data['point'][i]) + temp_list[i])
             idol_total_point += idol_point[i]
-        
+
         cnt = 0
         for idol in json_data['back_up']:
             # { value: 1048, name: 'Baidu' },
-            Point.idol_dic[idol] = create_value((idol_point[cnt] / idol_total_point) * 100, config.idol_json[idol]['name'])
+            Point.idol_dic[idol] = create_value(
+                (idol_point[cnt] / idol_total_point) * 100, config.idol_json[idol]['name'])
+            Point.idol_ins_dic[idol + '_i'] = create_ins(
+                (idol_point[cnt] / idol_total_point) * 100, config.idol_json[idol]['name'])
             Point.idol_color_dic[idol + '_c'] = "\"" + \
                 (config.idol_json[idol]['color']) + "\","
+            Point.idol_color_dic[idol + '_rc'] = config.idol_json[idol]['color']
             cnt += 1
 
             cur_group = config.idol_json[idol]['group'][1]
             Point.idol_group_point[cur_group] += 1
-            Point.idol_group[cur_group] = create_value(Point.idol_group_point[cur_group], cur_group)
+            Point.idol_group[cur_group] = create_value(
+                Point.idol_group_point[cur_group], cur_group)
             Point.idol_color_group[cur_group + '_c'] = "\"" + \
                 (config.group_json[cur_group]['color']) + "\","
         return render_template(
             'ending.html',
+            user_id=json_data['user_id'],
             total_point=total_point,
             Ms=Point.idol_group["μ's"],
             Aq=Point.idol_group["Aqours"],
@@ -234,7 +244,85 @@ def mid():
             Liyuu_c=Point.idol_color_dic["Liyuu_c"],
             Misaki_Nako_c=Point.idol_color_dic["Misaki_Nako_c"],
             Payton_Naomi_c=Point.idol_color_dic["Payton_Naomi_c"],
-            Aoyama_Nagisa_c=Point.idol_color_dic["Aoyama_Nagisa_c"]
+            Aoyama_Nagisa_c=Point.idol_color_dic["Aoyama_Nagisa_c"],
+
+            Aida_Rikako_i=Point.idol_ins_dic["Aida_Rikako_i"],
+            Furihata_Ai_i=Point.idol_ins_dic["Furihata_Ai_i"],
+            Iida_Riho_i=Point.idol_ins_dic["Iida_Riho_i"],
+            Inami_Anju_i=Point.idol_ins_dic["Inami_Anju_i"],
+            Kobayashi_Aika_i=Point.idol_ins_dic["Kobayashi_Aika_i"],
+            Komiya_Arisa_i=Point.idol_ins_dic["Komiya_Arisa_i"],
+            Kubo_Yurika_i=Point.idol_ins_dic["Kubo_Yurika_i"],
+            Kusuda_Aina_i=Point.idol_ins_dic["Kusuda_Aina_i"],
+            Mimori_Suzuko_i=Point.idol_ins_dic["Mimori_Suzuko_i"],
+            Nanjo_Yoshino_i=Point.idol_ins_dic["Nanjo_Yoshino_i"],
+            Nitta_Emi_i=Point.idol_ins_dic["Nitta_Emi_i"],
+            Pile_i=Point.idol_ins_dic["Pile_i"],
+            Saito_Shuka_i=Point.idol_ins_dic["Saito_Shuka_i"],
+            Suwa_Nanaka_i=Point.idol_ins_dic["Suwa_Nanaka_i"],
+            Suzuki_Aina_i=Point.idol_ins_dic["Suzuki_Aina_i"],
+            Takatsuki_Kanako_i=Point.idol_ins_dic["Takatsuki_Kanako_i"],
+            Tokui_Sora_i=Point.idol_ins_dic["Tokui_Sora_i"],
+            Uchida_Aya_i=Point.idol_ins_dic["Uchida_Aya_i"],
+            Sato_Hinata_i=Point.idol_ins_dic["Sato_Hinata_i"],
+            Tano_Asami_i=Point.idol_ins_dic["Tano_Asami_i"],
+            Onishi_Aguri_i=Point.idol_ins_dic["Onishi_Aguri_i"],
+            Sagara_Mayu_i=Point.idol_ins_dic["Sagara_Mayu_i"],
+            Maeda_Kaori_i=Point.idol_ins_dic["Maeda_Kaori_i"],
+            Kubota_Miyu_i=Point.idol_ins_dic["Kubota_Miyu_i"],
+            Murakami_Natsumi_i=Point.idol_ins_dic["Murakami_Natsumi_i"],
+            Kito_Akari_i=Point.idol_ins_dic["Kito_Akari_i"],
+            Kusunoki_Tomori_i=Point.idol_ins_dic["Kusunoki_Tomori_i"],
+            Sashide_Maria_i=Point.idol_ins_dic["Sashide_Maria_i"],
+            Tanaka_Chiemi_i=Point.idol_ins_dic["Tanaka_Chiemi_i"],
+            Koizumi_Moeka_i=Point.idol_ins_dic["Koizumi_Moeka_i"],
+            Uchida_Shu_i=Point.idol_ins_dic["Uchida_Shu_i"],
+            Houmoto_Akina_i=Point.idol_ins_dic["Houmoto_Akina_i"],
+            Yano_Hinaki_i=Point.idol_ins_dic["Yano_Hinaki_i"],
+            Date_Sayuri_i=Point.idol_ins_dic["Date_Sayuri_i"],
+            Liyuu_i=Point.idol_ins_dic["Liyuu_i"],
+            Misaki_Nako_i=Point.idol_ins_dic["Misaki_Nako_i"],
+            Payton_Naomi_i=Point.idol_ins_dic["Payton_Naomi_i"],
+            Aoyama_Nagisa_i=Point.idol_ins_dic["Aoyama_Nagisa_i"],
+
+            Aida_Rikako_rc=Point.idol_color_dic["Aida_Rikako_rc"],
+            Furihata_Ai_rc=Point.idol_color_dic["Furihata_Ai_rc"],
+            Iida_Riho_rc=Point.idol_color_dic["Iida_Riho_rc"],
+            Inami_Anju_rc=Point.idol_color_dic["Inami_Anju_rc"],
+            Kobayashi_Aika_rc=Point.idol_color_dic["Kobayashi_Aika_rc"],
+            Komiya_Arisa_rc=Point.idol_color_dic["Komiya_Arisa_rc"],
+            Kubo_Yurika_rc=Point.idol_color_dic["Kubo_Yurika_rc"],
+            Kusuda_Aina_rc=Point.idol_color_dic["Kusuda_Aina_rc"],
+            Mimori_Suzuko_rc=Point.idol_color_dic["Mimori_Suzuko_rc"],
+            Nanjo_Yoshino_rc=Point.idol_color_dic["Nanjo_Yoshino_rc"],
+            Nitta_Emi_rc=Point.idol_color_dic["Nitta_Emi_rc"],
+            Pile_rc=Point.idol_color_dic["Pile_rc"],
+            Saito_Shuka_rc=Point.idol_color_dic["Saito_Shuka_rc"],
+            Suwa_Nanaka_rc=Point.idol_color_dic["Suwa_Nanaka_rc"],
+            Suzuki_Aina_rc=Point.idol_color_dic["Suzuki_Aina_rc"],
+            Takatsuki_Kanako_rc=Point.idol_color_dic["Takatsuki_Kanako_rc"],
+            Tokui_Sora_rc=Point.idol_color_dic["Tokui_Sora_rc"],
+            Uchida_Aya_rc=Point.idol_color_dic["Uchida_Aya_rc"],
+            Sato_Hinata_rc=Point.idol_color_dic["Sato_Hinata_rc"],
+            Tano_Asami_rc=Point.idol_color_dic["Tano_Asami_rc"],
+            Onishi_Aguri_rc=Point.idol_color_dic["Onishi_Aguri_rc"],
+            Sagara_Mayu_rc=Point.idol_color_dic["Sagara_Mayu_rc"],
+            Maeda_Kaori_rc=Point.idol_color_dic["Maeda_Kaori_rc"],
+            Kubota_Miyu_rc=Point.idol_color_dic["Kubota_Miyu_rc"],
+            Murakami_Natsumi_rc=Point.idol_color_dic["Murakami_Natsumi_rc"],
+            Kito_Akari_rc=Point.idol_color_dic["Kito_Akari_rc"],
+            Kusunoki_Tomori_rc=Point.idol_color_dic["Kusunoki_Tomori_rc"],
+            Sashide_Maria_rc=Point.idol_color_dic["Sashide_Maria_rc"],
+            Tanaka_Chiemi_rc=Point.idol_color_dic["Tanaka_Chiemi_rc"],
+            Koizumi_Moeka_rc=Point.idol_color_dic["Koizumi_Moeka_rc"],
+            Uchida_Shu_rc=Point.idol_color_dic["Uchida_Shu_rc"],
+            Houmoto_Akina_rc=Point.idol_color_dic["Houmoto_Akina_rc"],
+            Yano_Hinaki_rc=Point.idol_color_dic["Yano_Hinaki_rc"],
+            Date_Sayuri_rc=Point.idol_color_dic["Date_Sayuri_rc"],
+            Liyuu_rc=Point.idol_color_dic["Liyuu_rc"],
+            Misaki_Nako_rc=Point.idol_color_dic["Misaki_Nako_rc"],
+            Payton_Naomi_rc=Point.idol_color_dic["Payton_Naomi_rc"],
+            Aoyama_Nagisa_rc=Point.idol_color_dic["Aoyama_Nagisa_rc"],
         )
 
     # 图片
@@ -243,7 +331,7 @@ def mid():
 
     if 'percent' in json_data.keys():
         json_data['percent'] += float(percent)
-    else: 
+    else:
         # 代表第一次进入
         json_data['percent'] = 0
         json_data['point'] = []

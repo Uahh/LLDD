@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
 import json
-import copy
 import random
-from re import A, template
 # from models import functions
-from flask import Flask, request, url_for, redirect
+from flask import Flask, request
 from flask import render_template
 import config
 
@@ -337,7 +335,7 @@ def mid():
         json_data['point'] = []
     return render_template(
         'middle.html',
-        idol=first,
+        idol=config.idol_json[first]['name'],
         p1=json_data['file_list'][0],
         p2=json_data['file_list'][1],
         p3=json_data['file_list'][2],

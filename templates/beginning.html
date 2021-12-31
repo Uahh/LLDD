@@ -242,7 +242,7 @@
                 return $(this).val();
             });
             var user_id = $('input[name="get_input"]').val();
-            console.log(user_id)
+            // console.log(user_id)
             var json_data = {};
             json_data.user_id = user_id;
             json_data.select_idols = [];
@@ -253,9 +253,9 @@
                 json_data.questions.push(select_data[i]);
                 json_data.back_up.push(select_data[i]);
             }
-            console.log(JSON.stringify(json_data))
-            $.post('http://192.168.31.11:173/mid', JSON.stringify(json_data), function (data, status) {
-                console.log(status);
+            // console.log(JSON.stringify(json_data))
+            $.post('http://{{ url }}/picture', JSON.stringify(json_data), function (data, status) {
+                // console.log(status);
                 document.write(data);
             })
         });

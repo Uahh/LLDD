@@ -53,17 +53,20 @@ def create_value(value, name):
 
 def create_ins(value, name):
     ans = "V% 的 N,"
-    return ans.replace('V', str(value)).replace('N', name)
+    return ans.replace('V', str(round(value, 2))).replace('N', name)
 
 
 @app.route('/', methods=["GET", "POST"])
 @app.route('/index', methods=["GET", "POST"])
 def index():
-    return render_template('beginning.html')
+    return render_template(
+        'beginning.html',
+        url=config.url
+    )
 
 
-@app.route('/mid', methods=["GET", "POST"])
-def mid():
+@app.route('/picture', methods=["GET", "POST"])
+def picture():
     json_data = request.get_data(as_text=True)
     json_data = json.loads(json_data)
     first = json_data['questions'][0]
@@ -100,7 +103,8 @@ def mid():
         questions_py=json_data['questions'],
         user_id=json_data['user_id'],
         percent=json_data['percent'],
-        point_py=json_data['point']
+        point_py=json_data['point'],
+        url=config.url
     )
 
 
@@ -363,7 +367,8 @@ def question():
         back_up_py=json_data['back_up'],
         questions_py=json_data['questions'],
         point_py=json_data['point'],
-        question_index=json_data['question_index']
+        question_index=json_data['question_index'],
+        url=config.url
     )
 
 

@@ -148,8 +148,8 @@
                                 right_list.push(select_list[i]);
                             }
                         }
-                        console.log(error_list);
-                        console.log(right_list);
+                        // console.log(error_list);
+                        // console.log(right_list);
                         for (let i = 0; i < error_list.length; i++){
                             $('#p' + error_list[i]).attr('style', "background: rgba(156, 10, 10, 0.83);background-image: url(https://lab.magiconch.com/captcha/assets/wrong.32c59a87.svg);");
                         }
@@ -174,14 +174,14 @@
 
                             json_data.point = point;
                             if(idol_list.length != 0){
-                                $.post('http://192.168.31.11:173/mid', JSON.stringify(json_data), function (data, status) {
+                                $.post('http://{{ url }}/picture', JSON.stringify(json_data), function (data, status) {
                                     document.body.innerHTML="";
                                     // console.log(data);
                                     document.write(data);
                                 })
                             }
                             else{
-                                $.post('http://192.168.31.11:173/question', JSON.stringify(json_data), function (data, status) {
+                                $.post('http://{{ url }}/question', JSON.stringify(json_data), function (data, status) {
                                     document.body.innerHTML="";
                                     // console.log(data);
                                     document.write(data);

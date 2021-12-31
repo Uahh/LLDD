@@ -16,6 +16,9 @@
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             background: #F8F8F5;
         }
+        html {
+            background: #F8F8F5;
+        }
     </style>
 </head>
 
@@ -29,8 +32,8 @@
                     <div style="height: 24; background: {{ color }}; border-radius: 4px;">
                         <h1 style="color: {{ color }};">Love 173</h1>
                     </div>
-                    <p style="margin: 20px 0px 0px 20px;text-align: left;">{{ topic }}</p>
-                    <div style="margin: 20px 0px 0px 20px;text-align: left;">
+                    <p style="margin:20px; text-align:left; line-height:150%">&emsp;&emsp;{{ topic }}</p>
+                    <div style="margin: 0px 20px 0px 0px;text-align: left;">
                         <el-radio v-model="radio" label="a" value="a" name="choice1" style="margin: 1px 10px 1px 20px">{{ A }}</el-radio>
                         </br>
                         <el-radio v-model="radio" label="b" value="b" name="choice2" style="margin: 1px 10px 1px 20px">{{ B }}</el-radio>
@@ -39,8 +42,8 @@
                         </br>
                         <el-radio v-model="radio" label="d" value="d" name="choice4" style="margin: 1px 10px 1px 20px">{{ D }}</el-radio>
                     </div>
+                    <el-button onclick="func_next()" type="primary" style="margin:15px" plain>提交</el-button>
                 </div>
-                <el-button onclick="func_next()" type="primary" plain>提交</el-button>
             </div>
             <div class="threecol last" style="text-align: right;">
             </div>
@@ -100,13 +103,22 @@
             json_data.percent = percent;
             json_data.question_index = question_index + 1;
             json_data.point = point;
-            console.log(JSON.stringify(json_data))
-            $.post('http://192.168.31.11:173/mid', JSON.stringify(json_data), function (data, status) {
-                console.log(status);
-                console.log(data);
-                document.body.innerHTML="";
-                document.write(data);
-            })
+            if(questions.length != 0){
+                $.post('http://192.168.31.11:173/question', JSON.stringify(json_data), function (data, status) {
+                    // console.log(status);
+                    // console.log(data);
+                    document.body.innerHTML="";
+                    document.write(data);
+                })
+            }
+            else{
+                $.post('http://192.168.31.11:173/ending', JSON.stringify(json_data), function (data, status) {
+                    // console.log(status);
+                    // console.log(data);
+                    document.body.innerHTML="";
+                    document.write(data);
+                })
+            }
         }
     </script>
 </body>

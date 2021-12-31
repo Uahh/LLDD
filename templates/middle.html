@@ -173,13 +173,20 @@
                                 point.push(0);
 
                             json_data.point = point;
-
-                            $.post('http://192.168.31.11:173/mid', JSON.stringify(json_data), function (data, status) {
-                                document.body.innerHTML="";
-                                console.log(data);
-                                document.write(data);
-                            })
-                            return; 
+                            if(idol_list.length != 0){
+                                $.post('http://192.168.31.11:173/mid', JSON.stringify(json_data), function (data, status) {
+                                    document.body.innerHTML="";
+                                    // console.log(data);
+                                    document.write(data);
+                                })
+                            }
+                            else{
+                                $.post('http://192.168.31.11:173/question', JSON.stringify(json_data), function (data, status) {
+                                    document.body.innerHTML="";
+                                    // console.log(data);
+                                    document.write(data);
+                                })
+                            }
                         }, 1500);
                     }
                 </script>
